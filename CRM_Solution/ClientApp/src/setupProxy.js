@@ -11,8 +11,13 @@ const context =  [
   "/Identity",
   "/connect",
   "/ApplyDatabaseMigrations",
-  "/_framework"
-];
+  "/_framework",
+    "/api/customers",
+    "/api/leads",
+    "/api/products"
+    
+  
+]  
 
 module.exports = function(app) {
   const appProxy = createProxyMiddleware(context, {

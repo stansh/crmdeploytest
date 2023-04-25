@@ -28,7 +28,10 @@ namespace CRM_Solution.Controllers
           {
               return NotFound();
           }
-            return await _context.Customers.ToListAsync();
+
+
+
+           return await _context.Customers.ToListAsync();
         }
 
         // GET: api/Customers/5
