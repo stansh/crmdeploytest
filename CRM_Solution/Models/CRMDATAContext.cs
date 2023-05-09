@@ -25,8 +25,7 @@ namespace CRM_Solution.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                //optionsBuilder.UseSqlServer(connection string in secrets.json);
-                optionsBuilder.UseSqlServer("Name=ConnectionStrings:data");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CRMDATA;Integrated Security=True");
             }
         }
 
@@ -34,18 +33,12 @@ namespace CRM_Solution.Models
         {
             modelBuilder.Entity<Customer>(entity =>
             {
-                entity.Property(e => e.CustomerId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("customer_id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Address)
+                entity.Property(e => e.City)
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("address");
-
-                entity.Property(e => e.CreatedDate)
-                    .HasColumnType("date")
-                    .HasColumnName("created_date");
+                    .HasColumnName("city");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(50)
@@ -66,13 +59,26 @@ namespace CRM_Solution.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("phone");
+
+                entity.Property(e => e.State)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("state");
+
+                entity.Property(e => e.Street)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("street");
+
+                entity.Property(e => e.Zipcode)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("zipcode");
             });
 
             modelBuilder.Entity<Lead>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(50)
@@ -97,13 +103,10 @@ namespace CRM_Solution.Models
 
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Description)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .HasColumnType("text")
                     .HasColumnName("description");
 
                 entity.Property(e => e.Name)

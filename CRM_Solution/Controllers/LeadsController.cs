@@ -90,21 +90,7 @@ namespace CRM_Solution.Controllers
               return Problem("Entity set 'CRMDATAContext.Leads'  is null.");
           }
             _context.Leads.Add(lead);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (LeadExists(lead.Id))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetLead", new { id = lead.Id }, lead);
         }

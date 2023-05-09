@@ -1,0 +1,420 @@
+﻿++Solution 'CRM_Solution' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:CRM_Solution.sln
+++Script Documents
+++bundle.js
+++VM34
+++VM35
+++CRM_Solution
+i:{00000000-0000-0000-0000-000000000000}:CRM_Solution
+++Connected Services 
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85639
+++Dependencies
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85638
+++Properties
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\
+++launchSettings.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\launchsettings.json
+++serviceDependencies.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\servicedependencies.json
+++ClientApp
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\
+++public
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\
+++Images
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\images\
+++logo.PNG
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\images\logo.png
+++favicon.ico
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\favicon.ico
+++index.html
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\index.html
+++manifest.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\manifest.json
+++src
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\
+++components
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\
+++api-authorization
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\
+++AddForm.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\addform.js
+++Counter.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\counter.js
+++Customers.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\customers.js
+++FetchData.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\fetchdata.js
+++Home.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\home.js
+++Layout.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\layout.js
+++Leads.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\leads.js
+++NavMenu.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\navmenu.js
+++Products.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\products.js
+++SideNav.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\sidenav.js
+++Style.css
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\style.css
+++App.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\app.js
+++custom.css
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\custom.css
+++index.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\index.js
+++reportWebVitals.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\reportwebvitals.js
+++service-worker.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\service-worker.js
+++serviceWorkerRegistration.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\serviceworkerregistration.js
+++setupProxy.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\setupproxy.js
+++setupTests.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\setuptests.js
+++.env
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env
+++.gitignore
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.gitignore
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\.gitignore
+++aspnetcore-https.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\aspnetcore-https.js
+++aspnetcore-react.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\aspnetcore-react.js
+++package.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\package.json
+++README.md
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\readme.md
+++Controllers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\
+++CustomersController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\customerscontroller.cs
+++LeadsController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\leadscontroller.cs
+++OidcConfigurationController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\oidcconfigurationcontroller.cs
+++ProductsController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\productscontroller.cs
+++WeatherForecastController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\weatherforecastcontroller.cs
+++Data
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\
+++Migrations
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\migrations\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\
+++aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\migrations\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs
+++Models
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\
+++Pages
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\
+++appsettings.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\appsettings.json
+++Program.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\program.cs
+++WeatherForecast.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\weatherforecast.cs
+++Secrets.json (Local)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85673
+++SQL Server Database (ConnectionStrings:data)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85672
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85674
+++Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:analyzers
+++Frameworks
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:frameworks
+++Packages
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:packages
+++serviceDependencies.local.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\servicedependencies.local.json
+++ApiAuthorizationConstants.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\apiauthorizationconstants.js
+++ApiAuthorizationRoutes.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\apiauthorizationroutes.js
+++AuthorizeRoute.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\authorizeroute.js
+++AuthorizeService.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\authorizeservice.js
+++Login.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\login.js
+++LoginMenu.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\loginmenu.js
+++Logout.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\logout.js
+++App.test.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\app.test.js
+++.env.development
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env.development
+++package-lock.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\package-lock.json
+++ApplicationDbContext.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\applicationdbcontext.cs
+++ApplicationUser.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\applicationuser.cs
+++aspnet53bc9b9d9d6a45d484292a2761773502Context.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnet53bc9b9d9d6a45d484292a2761773502context.cs
+++AspNetRole.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetrole.cs
+++AspNetRoleClaim.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetroleclaim.cs
+++AspNetUser.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuser.cs
+++AspNetUserClaim.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuserclaim.cs
+++AspNetUserLogin.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuserlogin.cs
+++AspNetUserToken.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetusertoken.cs
+++CRMDATAContext.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\crmdatacontext.cs
+++Customer.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\customer.cs
+++DeviceCode.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\devicecode.cs
+++Key.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\key.cs
+++Lead.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\lead.cs
+++MockDatum.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\mockdatum.cs
+++PersistedGrant.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\persistedgrant.cs
+++Product.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\product.cs
+++Shared
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\shared\
+++_ViewImports.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\_viewimports.cshtml
+++Error.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\error.cshtml
+++appsettings.Development.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\appsettings.development.json
+++MessagePackAnalyzer
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\microsoft.netcore.app
+++Autofac (7.0.0)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85671
+++Microsoft.AspNetCore.ApiAuthorization.IdentityServer (6.0.4)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85670
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.4)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85663
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.15)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85664
+++Microsoft.AspNetCore.Identity.UI (6.0.4)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85669
+++Microsoft.AspNetCore.SpaProxy (6.0.4)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85666
+++Microsoft.EntityFrameworkCore.Relational (6.0.15)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85665
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.15)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85661
+++Microsoft.EntityFrameworkCore.Tools (6.0.15)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85667
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.13)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85668
+++Swashbuckle.AspNetCore (6.3.0)
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>85662
+++.env.development.local
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env.development.local
+++00000000000000_CreateIdentitySchema.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\00000000000000_createidentityschema.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\applicationdbcontextmodelsnapshot.cs
+++_LoginPartial.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\shared\_loginpartial.cshtml
+++Error.cshtml.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\error.cshtml.cs
+++00000000000000_CreateIdentitySchema.Designer.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\00000000000000_createidentityschema.designer.cs
+++checksession
+++main.99fe2f6fef86c4ce1f36.hot-update.js
+++VM138
+++VM139
+++jquery.js
+++bootstrap.bundle.js
+++site.js
+++jquery.validate.js
+++jquery.validate.unobtrusive.js
+++aspnetcore-browser-refresh.js
+++browserLink
+++main.76a916a2c7acd044eb41.hot-update.js
+++VM336
+++VM337
+++VM338
+++main.578ef90ff8374789cd58.hot-update.js
+++main.09fb802698205d5f1505.hot-update.js
+++VM5
+++VM49
+++VM50
+++VM51
+++main.bd6974bb0e112933b440.hot-update.js
+++main.27a75752b0d0441ee299.hot-update.js
+++main.6f5859d369cf32697143.hot-update.js
+++main.299041dcb066934b0a3e.hot-update.js
+++main.8cf56dbb94c9d28c112a.hot-update.js
+++main.a0ca6877240975c6e54b.hot-update.js
+++main.087eed4f979b3606ac8a.hot-update.js
+++main.31a31ec397ff31dce420.hot-update.js
+++swagger-ui-bundle.js
+++swagger-ui-standalone-preset.js
+++main.6d6494042ac2eddc7b62.hot-update.js
+++main.c46cf379fc83ca804327.hot-update.js
+++VM56
+++VM57
+++main.7160c997f2f77ed09208.hot-update.js
+++VM73
+++VM74
+++VM75
+++VM20
+++VM21
+++VM22
+++VM23
+++VM24
+++VM25
+++VM26
+++VM27
+++VM28
+++VM29
+++VM30
+++VM31
+++VM32
+++VM33
+++VM36
+++VM37
+++VM38
+++VM39
+++VM40
+++chromewebdata
+++VM52
+++VM53
+++VM54
+++VM55
+++VM58
+++VM59
+++VM60
+++VM61
+++VM62
+++VM63
+++VM64
+++VM65
+++VM66
+++VM67
+++VM68
+++VM69
+++VM70
+++VM71
+++VM72
+++VM76
+++VM77
+++VM86
+++VM87
+++VM88
+++VM89
+++VM90
+++VM91
+++VM92
+++VM93
+++VM94
+++VM95
+++VM96
+++VM97
+++VM98
+++VM99
+++VM100
+++VM101
+++VM102
+++VM103
+++VM104
+++VM105
+++VM106
+++VM107
+++VM108
+++VM109
+++VM110
+++VM111
+++VM112
+++VM113
+++VM114
+++VM12
+++VM13
+++VM14
+++VM15
+++VM16
+++VM17
+++VM18
+++VM19
+++main.e6a29d716673a5e26159.hot-update.js
+++main.14ffa801e44df9a340bf.hot-update.js
+++VM43
+++main.d1afe3a5996a4c77b50f.hot-update.js
+++main.a8959b48c53b9866fea9.hot-update.js
+++VM78
+++VM85
+++main.1d3a5b9fab989c462923.hot-update.js
+++main.482abdc96be33402894c.hot-update.js
+++main.fdbc7e268ebeaa7f144b.hot-update.js
+++main.1c49687371142bd62e60.hot-update.js
+++main.25045064287986558148.hot-update.js
+++VM146
+++VM147
+++main.c5b1437d2dc9580f1049.hot-update.js
+++Microsoft.IdentityModel.Tokens (6.30.0)
+++Microsoft.IdentityModel.Tokens (6.29.0)
+++main.29f76ddbaaad85ff4a3b.hot-update.js
+++main.780e5fd8b2f72446550d.hot-update.js
+++main.04e7895e9e9f20df6bd7.hot-update.js
+++VM180
+++VM181
+++main.624c074dd2022216379e.hot-update.js
+++VM266
+++VM267
+++VM341
+++VM342
+++VM343
+++VM344
+++VM345
+++VM346
+++VM376
+++VM377
+++VM378
+++VM379
+++VM380
+++VM381
+++main.b4ac7a3026c68c582584.hot-update.js
+++VM42
+++VM44
+++main.e9148b4564936663d444.hot-update.js
