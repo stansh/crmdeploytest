@@ -9,8 +9,18 @@ export function Customers(props) {
     const [customers, setCustomers] = useState([]);
     const [loading, setLoading] = useState(false)
     const [modal, setModal] = useState(false);
+    const [modal2, setModal2] = useState(false);
     const [alert, setAlert] = useState(false);
     const [alert2, setAlert2] = useState(false);
+    const [id, setId] = useState(null);
+    const [firstName, setFirstName] = useState(null);
+    const [lastName, setLastName] = useState(null);
+    const [email, setEmail] = useState(null);
+    const [phone, setPhone] = useState(null);
+    const [street, setStreet] = useState(null);
+    const [city, setCity] = useState(null);
+    const [state, setState] = useState(null);
+    const [zipcode, setZipcode] = useState(null);
 
   
     const alertToggle = () => {
@@ -18,17 +28,41 @@ export function Customers(props) {
         setTimeout(() => {
             setAlert(false)
         }, "3000");
+        window.location.reload(false);
+    
     }
 
     const alertToggle2 = () => {
-        setAlert(true);
+        setAlert2(true);
         setTimeout(() => {
             setAlert(false)
+            window.location.reload(false);
         }, "3000");
+       
     }
     
 
     const toggle = () => setModal(!modal);
+
+    const toggle2 = (event) => {
+        setModal2(!modal2);
+        if (modal2 === false) {
+            setId(customers[event.target.id].id);
+            let cust = customers[event.target.id];
+            setFirstName(cust.firstName);
+            setLastName(cust.lastName);
+            setEmail(cust.email);
+            setPhone(cust.phone);
+            setStreet(cust.street);
+            setCity(cust.city);
+            setState(cust.state);
+            setZipcode(cust.zipcode);
+            
+            const user = authService.getUser();
+            console.log(user);
+            
+        }
+    };
 
     useEffect(() => {
         setLoading(true)
@@ -60,6 +94,7 @@ export function Customers(props) {
     }, [])
 
     const postCustomer = () => {
+        
 
         const newCustomerData = {
 
@@ -103,56 +138,57 @@ export function Customers(props) {
 
 
     const editCustomer = (event) => {
-        console.log(event)
-       // console.log(customers.find(x => x.customerId === int))
-        //const newCustomerData = {
+        
+        const updatedCustomer = {
+            id:id,
+            firstName: document.querySelector("#editCustomerForm").custFirstName.value,
+            lastName: document.querySelector("#editCustomerForm").custLastName.value,
+            phone: document.querySelector("#editCustomerForm").custPhone.value,
+            email: document.querySelector("#editCustomerForm").custEmail.value,
+            street: document.querySelector("#editCustomerForm").custStreet.value,
+            city: document.querySelector("#editCustomerForm").custCity.value,
+            state: document.querySelector("#editCustomerForm").custState.value,
+            zipcode: document.querySelector("#editCustomerForm").custZipcode.value,
 
-        //    customerId
-        //    firstName: document.querySelector("#addCustomerForm").custFirstName.value,
-        //    lastName: document.querySelector("#addCustomerForm").custLastName.value,
-        //    phone: document.querySelector("#addCustomerForm").custPhone.value,
-        //    email: document.querySelector("#addCustomerForm").custEmail.value,
-        //    street: document.querySelector("#addCustomerForm").custStreet.value,
-        //    city: document.querySelector("#addCustomerForm").custCity.value,
-        //    state: document.querySelector("#addCustomerForm").custState.value,
-        //    zipcode: document.querySelector("#addCustomerForm").custZipcode.value,
+        }
+            
+        console.log(id)
+        const token = authService.getAccessToken();
+        return fetch(`/api/customers/${id}`, {
+            method: "PUT",
+            body: JSON.stringify(updatedCustomer),
+            headers: !token ? {} : { 'Authorization': `Bearer ${token}`, "Content-Type": "application/json" }
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response;
 
+                } else {
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                    error.response = response;
+                    throw error;
+                }
+            },
+                error => { throw error; }
+            )
 
-        //}
-        //const token = authService.getAccessToken();
-        //return fetch('/api/customers', {
-        //    method: "POST",
-        //  /*  body: JSON.stringify(updatedCustomer),*/
-        //    headers: !token ? {} : { 'Authorization': `Bearer ${token}`, "Content-Type": "application/json" }
-        //})
-        //    .then(response => {
-        //        if (response.ok) {
-        //            return response;
+            .then(() => {
+                toggle2();
+                setId(null);
+                alertToggle2();
 
-        //        } else {
-        //            const error = new Error(`Error ${response.status}: ${response.statusText}`);
-        //            error.response = response;
-        //            throw error;
-        //        }
-        //    },
-        //        error => { throw error; }
-        //    )
-
-        //    .then(() => {
-        //        toggle();
-        //        alertToggle();
-
-        //    })
-        //    .catch(error => { console.log('Error: ', error.message) })
+            })
+            .catch(error => { console.log('Error: ', error.message) })
     }
 
 
     return (
             <>
             <h3>Customers</h3>
-            {loading && <Spinner animation="none"/>}
+            {loading && <Spinner children="" />}
             <Button color="info" onClick={toggle}>Add Cutomer</Button>
             <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New customer successfully added!</Alert>
+            <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Customer updated!</Alert>
 
                 <table className='table table-striped' aria-labelledby="tabelLabel">
                     <thead>
@@ -166,13 +202,13 @@ export function Customers(props) {
                         </tr>
                     </thead>
                     <tbody>
-                        {customers.map(customer =>
-                            <tr key={customer.customerId}>
+                        {customers.map((customer,index) =>
+                            <tr key={index}>
                                 <td>{customer.firstName} {customer.lastName}</td>
                                 <td>{customer.email}</td>
                                 <td>{customer.phone}</td>
                                 <td>{customer.street}, {customer.city}, {customer.state} {customer.zipcode}</td>
-                                <td><Button color="secondary" onClick={editCustomer} value={customer.customerId}>Edit</Button></td>
+                                <td><Button color="secondary" className='btn btn-xs' outline onClick={toggle2} id={index}>Edit</Button></td>
 
                             </tr>
                         )}
@@ -284,7 +320,125 @@ export function Customers(props) {
                             Cancel
                         </Button>
                     </ModalFooter>
-                </Modal>
+            </Modal>
+            <Modal isOpen={modal2} toggle={toggle2} id="editCustModal">
+                <ModalHeader closeButton>
+                    Edit Customer
+                </ModalHeader>
+                <ModalBody className="row" >
+                    <div id="currentCustData" className="col-5"  >
+                        <h6>{firstName} {lastName}</h6>
+                        <h6>{phone}</h6>
+                        <h6>{email}</h6>
+                        <h6>{street}, {city}, {state} {zipcode}</h6>
+
+                        
+                    </div>
+                    <div className="col">
+                        <Form id="editCustomerForm" className="d-inline"  >
+                            <FormGroup>
+                                <Label for="custFirstName">
+                                    First Name
+                                </Label>
+                                <Input
+                                    id="custFirstName"
+                                    name="firstName"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custLastName">
+                                    Last Name
+                                </Label>
+                                <Input
+                                    id="custLastName"
+                                    name="lastName"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custPhone">
+                                    Phone Number
+                                </Label>
+                                <Input
+                                    id="custPhone"
+                                    name="custPhone"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custEmail">
+                                    Email
+                                </Label>
+                                <Input
+                                    id="custEmail"
+                                    name="custEmail"
+                                    placeholder=""
+                                    type="email"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custStreet">
+                                    Street
+                                </Label>
+                                <Input
+                                    id="custStreet"
+                                    name="ccustStreet"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custCity">
+                                    City
+                                </Label>
+                                <Input
+                                    id="custCity"
+                                    name="custCity"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custState">
+                                    State
+                                </Label>
+                                <Input
+                                    id="custState"
+                                    name="custState"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="custZipcode">
+                                    Zipcode
+                                </Label>
+                                <Input
+                                    id="custZipcode"
+                                    name="custZipcode"
+                                    placeholder=""
+                                    type="text"
+                                />
+                            </FormGroup>
+
+                        </Form>
+                    </div>
+                   
+
+                </ModalBody>
+                <ModalFooter>
+                    <Button variant="secondary" onClick={editCustomer}>
+                        Submit
+                    </Button>
+                    <Button variant="primary" onClick={toggle2}>
+                        Cancel
+                    </Button>
+                </ModalFooter>
+            </Modal>
            
 
             </>
