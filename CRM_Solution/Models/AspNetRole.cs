@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 
 namespace CRM_Solution.Models
 {
-    public partial class AspNetRole
+    public partial class AspNetRole 
     {
         public AspNetRole()
         {

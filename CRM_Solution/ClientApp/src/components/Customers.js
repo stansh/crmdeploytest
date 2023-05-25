@@ -3,6 +3,7 @@ import { Form, FormGroup, Input, Label, Alert, UncontrolledAlert, Button,Modal, 
 import authService from './api-authorization/AuthorizeService'
 import { useLocation, Redirect, useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { UserManager } from 'oidc-client';
 
 
 export function Customers(props) {
@@ -42,8 +43,17 @@ export function Customers(props) {
     }
     
 
-    const toggle = () => setModal(!modal);
+    const toggle = () => {
+        setModal(!modal);
+         const user = authService.getUser();
+            console.log(user);
 
+        
+        var x = authService.getAccessToken();
+            console.log(x)
+           
+
+    }
     const toggle2 = (event) => {
         setModal2(!modal2);
         if (modal2 === false) {
@@ -58,8 +68,13 @@ export function Customers(props) {
             setState(cust.state);
             setZipcode(cust.zipcode);
             
-            const user = authService.getUser();
-            console.log(user);
+           // const user = authService.getUser();
+           // console.log(user);
+
+           // const y = UserManager;
+           // var x = y.getUser;
+           // console.log(x)
+           //// console.log(y)
             
         }
     };
@@ -151,8 +166,8 @@ export function Customers(props) {
             zipcode: document.querySelector("#editCustomerForm").custZipcode.value,
 
         }
-            
-        console.log(id)
+
+        
         const token = authService.getAccessToken();
         return fetch(`/api/customers/${id}`, {
             method: "PUT",

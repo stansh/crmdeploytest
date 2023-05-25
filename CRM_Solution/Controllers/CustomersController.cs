@@ -6,11 +6,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CRM_Solution.Models;
+using Microsoft.AspNetCore.Authorization;
+
+//using Microsoft.AspNetCore.Authorization;
 
 namespace CRM_Solution.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize(Roles = "Admin")]
+    //[Authorize(Policy = "RequireAdminRole")]
     public class CustomersController : ControllerBase
     {
         private readonly CRMDATAContext _context;
@@ -19,7 +25,7 @@ namespace CRM_Solution.Controllers
         {
             _context = context;
         }
-
+        
         // GET: api/Customers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()

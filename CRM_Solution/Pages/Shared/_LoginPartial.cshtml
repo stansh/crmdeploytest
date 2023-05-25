@@ -10,9 +10,12 @@
     {
         returnUrl = query["returnUrl"];
     }
+
+   
 }
 
 <ul class="navbar-nav">
+
     @if (SignInManager.IsSignedIn(User))
     {
         <li class="nav-item">
@@ -23,6 +26,7 @@
                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
             </form>
         </li>
+       
     }
     else
     {

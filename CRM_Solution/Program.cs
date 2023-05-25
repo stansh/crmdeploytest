@@ -1,9 +1,16 @@
 using CRM_Solution.Data;
+//using CRM_Solution.Identity;
 using CRM_Solution.Models;
+using Duende.IdentityServer.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
+using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +26,91 @@ builder.Services.AddDbContext<CRMDATAContext>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+      .AddRoles<IdentityRole>()
+      .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+
+
+
+//builder.Services.AddIdentityServer()
+//    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
 builder.Services.AddIdentityServer()
-    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
+            .AddApiAuthorization<ApplicationUser, ApplicationDbContext>(x =>
+            {
+                x.IdentityResources.Add(new IdentityResource("roles", "Roles", new[] { JwtClaimTypes.Role, ClaimTypes.Role }));
+                foreach (var c in x.Clients)
+                {
+                    c.AllowedScopes.Add("roles");
+                }
+                foreach (var a in x.ApiResources)
+                {
+                    a.UserClaims.Add(JwtClaimTypes.Role);
+                }
+
+
+            });
+
+
+
+
+//builder.Services.AddAuthorization(options =>
+//{
+//    options.AddPolicy("RequireAdminRole", policy =>
+//    {
+//        policy.RequireClaim(ClaimTypes.Role, "Admin");
+//    });
+//});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdminRole",
+         policy => policy.RequireRole("Admin"));
+});
+
+
+
+
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//})
+
+//        .AddJwtBearer(options =>
+//        {
+//            options.TokenValidationParameters = new TokenValidationParameters
+//            {
+//                ValidateIssuer = false,
+//                ValidateAudience = true,
+//                ValidateLifetime = true,
+//                //ValidateIssuerSigningKey = true,
+//                //ValidIssuer = builder.Configuration["Jwt:Issuer"],
+//                //ValidAudience = builder.Configuration["Jwt:Audience"],
+//                //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+//            };
+//        });
 
 builder.Services.AddAuthentication()
-    .AddIdentityServerJwt();
+    .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                ValidAudience = builder.Configuration["Jwt:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                
+
+            };
+        });
+
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
@@ -60,6 +144,49 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
+
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+//    var user = await userManager.FindByEmailAsync("sadasd@yam.com");
+
+    
+//        await userManager.AddToRoleAsync(user, "Admin");
+   
+//}
+
+#region Add users and roles 
+//using (var scope = app.Services.CreateScope())
+//{
+//    var roleManager = scope.ServiceProvider.GetRequiredService <RoleManager<IdentityRole>>();
+//    var roles = new[] { "Admin", "User" };
+
+//    foreach (var role in roles)
+//    {
+//        if (!await roleManager.RoleExistsAsync(role))
+//            await roleManager.CreateAsync(new IdentityRole(role));
+//    }
+//}
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+
+//    // if(await userManager.FindByEmailAsync("sadasd@yam.com") != null)
+//    var user = await userManager.FindByEmailAsync("sadasd@yam.com");
+//    await userManager.AddToRoleAsync(user, "Admin");
+
+//    var user2 = await userManager.FindByEmailAsync("user@user.us");
+//    await userManager.AddToRoleAsync(user2, "User");
+
+//}
+
+#endregion
+
+
 app.MapRazorPages();
 
 app.MapFallbackToFile("index.html"); ;

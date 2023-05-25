@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CRM_Solution.Models
 {
     public partial class aspnet53bc9b9d9d6a45d484292a2761773502Context : DbContext
+    // public partial class aspnet53bc9b9d9d6a45d484292a2761773502Context : IdentityDbContext<ApplicationUser>
     {
         public aspnet53bc9b9d9d6a45d484292a2761773502Context()
         {
