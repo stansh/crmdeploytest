@@ -23,6 +23,8 @@ export function Customers(props) {
     const [state, setState] = useState(null);
     const [zipcode, setZipcode] = useState(null);
 
+    const [error, setError] = useState(null);
+    const [user, setUser] = useState(null);
   
     const alertToggle = () => {
         setAlert(true);
@@ -68,41 +70,40 @@ export function Customers(props) {
             setState(cust.state);
             setZipcode(cust.zipcode);
             
-           // const user = authService.getUser();
-           // console.log(user);
-
-           // const y = UserManager;
-           // var x = y.getUser;
-           // console.log(x)
-           //// console.log(y)
             
         }
     };
+    const toggle3 = (event) => {
+        let cust = customers[event.target.id];
+        console.log(cust)
+    }
+
+
 
     useEffect(() => {
         setLoading(true)
         const token = authService.getAccessToken();
+        authService.getUser().then(res => setUser(res))
+        console.log(user.role)
 
         fetch('/api/customers', {
             headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
         })
         .then(response => {
             if (response.ok) {
-                setLoading(false)
+                setLoading(false);
                 return response;
             } else {
                 const error = new Error(`Error ${response.status}: ${response.statusText}`);
                 error.response = response;
+                setError(error)
                 throw error;
             }
-        },
-            error => {
-                const errMess = new Error(error.message);
-                throw errMess;
-            }
-        )
+        })
         .then(res => res.json())
-        .then(res => setCustomers(res))
+        .then(res => {
+                setCustomers(res);
+            })
         .catch(error => { console.log('Error: ', error.message) })
 
 
@@ -137,12 +138,10 @@ export function Customers(props) {
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`);
                     error.response = response;
+                    setError(error)
                     throw error;
                 }
-            },
-                error => { throw error; }
-            )
-
+            })
             .then(() =>{
                 toggle();
                 alertToggle();
@@ -181,11 +180,10 @@ export function Customers(props) {
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`);
                     error.response = response;
+                    setError(error)
                     throw error;
                 }
-            },
-                error => { throw error; }
-            )
+            })
 
             .then(() => {
                 toggle2();
@@ -196,12 +194,13 @@ export function Customers(props) {
             .catch(error => { console.log('Error: ', error.message) })
     }
 
-
+ 
     return (
             <>
             <h3>Customers</h3>
-            {loading && <Spinner children="" />}
-            <Button color="info" onClick={toggle}>Add Cutomer</Button>
+            {loading && !error &&  <Spinner children="" />}
+            {error && <h3>{error.message}</h3>}
+            {!error && <Button color="info" onClick={toggle}>Add Cutomer</Button>}
             <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New customer successfully added!</Alert>
             <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Customer updated!</Alert>
 
@@ -224,6 +223,7 @@ export function Customers(props) {
                                 <td>{customer.phone}</td>
                                 <td>{customer.street}, {customer.city}, {customer.state} {customer.zipcode}</td>
                                 <td><Button color="secondary" className='btn btn-xs' outline onClick={toggle2} id={index}>Edit</Button></td>
+                                <td><Button color="danger" className='btn btn-xs' outline onClick={toggle3} id={index}>Delete</Button></td>
 
                             </tr>
                         )}

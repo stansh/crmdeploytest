@@ -6,6 +6,7 @@ import { Home } from './components/Home';
 import { Customers } from './components/Customers';
 import { Products } from './components/Products';
 import { Leads } from './components/Leads';
+import { Dashboard } from './components/Dashboard';
 import AddForm from './components/AddForm';
 import { Counter } from './components/Counter';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
@@ -27,6 +28,7 @@ export default class App extends Component {
             <AuthorizeRoute path='/products' component={Products} />
             <AuthorizeRoute path='/leads' component={Leads} />
             <AuthorizeRoute path='/addForm' component={AddForm} />
+            <AuthorizeRoute path='/dashboard' component={Dashboard} />
 
         <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
       </Layout>

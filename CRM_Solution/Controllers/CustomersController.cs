@@ -15,8 +15,6 @@ namespace CRM_Solution.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    [Authorize(Roles = "Admin")]
-    //[Authorize(Policy = "RequireAdminRole")]
     public class CustomersController : ControllerBase
     {
         private readonly CRMDATAContext _context;
@@ -30,10 +28,15 @@ namespace CRM_Solution.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
-          if (_context.Customers == null)
-          {
-              return NotFound();
-          }
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
+
+            if (User.IsInRole("User"))
+            {
+                return Unauthorized();
+            }
             return await _context.Customers.ToListAsync();
         }
 

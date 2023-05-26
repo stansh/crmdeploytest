@@ -1,14 +1,17 @@
+
 using CRM_Solution.Data;
 //using CRM_Solution.Identity;
 using CRM_Solution.Models;
 using Duende.IdentityServer.Models;
 using IdentityModel;
+using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 
@@ -56,59 +59,11 @@ builder.Services.AddIdentityServer()
 
 
 
-//builder.Services.AddAuthorization(options =>
-//{
-//    options.AddPolicy("RequireAdminRole", policy =>
-//    {
-//        policy.RequireClaim(ClaimTypes.Role, "Admin");
-//    });
-//});
-
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("RequireAdminRole",
-         policy => policy.RequireRole("Admin"));
-});
+builder.Services.AddAuthentication();
+    //.AddIdentityServerJwt();
 
 
 
-
-//builder.Services.AddAuthentication(options =>
-//{
-//    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//})
-
-//        .AddJwtBearer(options =>
-//        {
-//            options.TokenValidationParameters = new TokenValidationParameters
-//            {
-//                ValidateIssuer = false,
-//                ValidateAudience = true,
-//                ValidateLifetime = true,
-//                //ValidateIssuerSigningKey = true,
-//                //ValidIssuer = builder.Configuration["Jwt:Issuer"],
-//                //ValidAudience = builder.Configuration["Jwt:Audience"],
-//                //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-//            };
-//        });
-
-builder.Services.AddAuthentication()
-    .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                ValidAudience = builder.Configuration["Jwt:Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-                
-
-            };
-        });
 
 
 
@@ -146,16 +101,6 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-
-//    var user = await userManager.FindByEmailAsync("sadasd@yam.com");
-
-    
-//        await userManager.AddToRoleAsync(user, "Admin");
-   
-//}
 
 #region Add users and roles 
 //using (var scope = app.Services.CreateScope())
