@@ -11,8 +11,10 @@ export function Customers(props) {
     const [loading, setLoading] = useState(false)
     const [modal, setModal] = useState(false);
     const [modal2, setModal2] = useState(false);
+    const [modal3, setModal3] = useState(false);
     const [alert, setAlert] = useState(false);
     const [alert2, setAlert2] = useState(false);
+    const [alert3, setAlert3] = useState(false);
     const [id, setId] = useState(null);
     const [firstName, setFirstName] = useState(null);
     const [lastName, setLastName] = useState(null);
@@ -25,23 +27,39 @@ export function Customers(props) {
 
     const [error, setError] = useState(null);
     const [user, setUser] = useState(null);
-  
+
+
+    //successful add Alert
     const alertToggle = () => {
+        
         setAlert(true);
         setTimeout(() => {
             setAlert(false)
         }, "3000");
-        window.location.reload(false);
-    
+       
     }
 
+
+    //successful edit Alert
     const alertToggle2 = () => {
+        
         setAlert2(true);
         setTimeout(() => {
-            setAlert(false)
-            window.location.reload(false);
+            setAlert2(false)   
         }, "3000");
        
+       
+    }
+
+
+    //successful delete Alert
+    const alertToggle3 = () => {
+        setAlert3(true);
+        setTimeout(() => {
+            setAlert3(false)        
+        }, "3000");
+      
+
     }
     
 
@@ -52,7 +70,9 @@ export function Customers(props) {
 
         
         var x = authService.getAccessToken();
-            console.log(x)
+        console.log(x)
+
+        
            
 
     }
@@ -68,14 +88,17 @@ export function Customers(props) {
             setStreet(cust.street);
             setCity(cust.city);
             setState(cust.state);
-            setZipcode(cust.zipcode);
-            
-            
-        }
+            setZipcode(cust.zipcode);  
+        } 
+
     };
     const toggle3 = (event) => {
-        let cust = customers[event.target.id];
-        console.log(cust)
+
+        setModal3(!modal3);
+        if (modal3 === false) {
+            setId(customers[event.target.id].id);
+        } 
+
     }
 
 
@@ -83,8 +106,9 @@ export function Customers(props) {
     useEffect(() => {
         setLoading(true)
         const token = authService.getAccessToken();
-        authService.getUser().then(res => setUser(res))
-        console.log(user.role)
+
+        //authService.getUser().then(res => setUser(res))
+        //console.log(user)
 
         fetch('/api/customers', {
             headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
@@ -102,7 +126,8 @@ export function Customers(props) {
         })
         .then(res => res.json())
         .then(res => {
-                setCustomers(res);
+            setCustomers(res);
+            
             })
         .catch(error => { console.log('Error: ', error.message) })
 
@@ -146,6 +171,7 @@ export function Customers(props) {
                 toggle();
                 alertToggle();
                 
+                
             })
             .catch(error => { console.log('Error: ', error.message) })
     }
@@ -165,8 +191,6 @@ export function Customers(props) {
             zipcode: document.querySelector("#editCustomerForm").custZipcode.value,
 
         }
-
-        
         const token = authService.getAccessToken();
         return fetch(`/api/customers/${id}`, {
             method: "PUT",
@@ -186,13 +210,50 @@ export function Customers(props) {
             })
 
             .then(() => {
+               
                 toggle2();
                 setId(null);
                 alertToggle2();
+               
 
             })
             .catch(error => { console.log('Error: ', error.message) })
     }
+
+
+    const deleteCustomer = () => {
+
+ 
+        const token = authService.getAccessToken();
+        return fetch(`/api/customers/${id}`, {
+            method: "DELETE",
+            body: "",
+            headers: !token ? {} : { 'Authorization': `Bearer ${token}`, "Content-Type": "application/json" }
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log(response)
+                    return response;
+
+                } else {
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                    error.response = response;
+                    setError(error)
+                    throw error;
+                }
+            })
+
+            .then(() => {
+                
+                toggle3();
+                setId(null);
+                alertToggle3();
+             
+
+            })
+            .catch(error => { console.log('Error: ', error.message) })
+    }
+
 
  
     return (
@@ -200,9 +261,10 @@ export function Customers(props) {
             <h3>Customers</h3>
             {loading && !error &&  <Spinner children="" />}
             {error && <h3>{error.message}</h3>}
-            {!error && <Button color="info" onClick={toggle}>Add Cutomer</Button>}
+            {!error && <Button color="secondary" onClick={toggle}>Add Customer</Button>}
             <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New customer successfully added!</Alert>
             <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Customer updated!</Alert>
+            <Alert color="info" isOpen={alert3} toggle={alertToggle3} fade={true}>Customer deleted succerfully.</Alert>
 
                 <table className='table table-striped' aria-labelledby="tabelLabel">
                     <thead>
@@ -450,6 +512,24 @@ export function Customers(props) {
                         Submit
                     </Button>
                     <Button variant="primary" onClick={toggle2}>
+                        Cancel
+                    </Button>
+                </ModalFooter>
+            </Modal>
+            <Modal isOpen={modal3} toggle={toggle3} id="deleteCustModal">
+                <ModalHeader closeButton>
+                    Delete Customer
+                </ModalHeader>
+                <ModalBody className="row" >
+                
+                        <h6>Are sure that you want to delete the customer?</h6>
+
+                </ModalBody>
+                <ModalFooter>
+                    <Button variant="secondary" onClick={deleteCustomer}>
+                        Submit
+                    </Button>
+                    <Button variant="primary" onClick={toggle3}>
                         Cancel
                     </Button>
                 </ModalFooter>

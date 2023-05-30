@@ -25,18 +25,23 @@ export class SideNav extends Component {
     render() {
         return (
             <ul class="nav flex-column col-md-2">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/customers">Customers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/leads">Leads</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/products">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Dashboard</a>
-                </li>
+                {/*<li class="nav-item">*/}
+                {/*    <a class="nav-link active" aria-current="page" href="/customers">Customers</a>*/}
+                {/*</li>*/}
+                {/*<li class="nav-item">*/}
+                {/*    <a class="nav-link" href="/leads">Leads</a>*/}
+                {/*</li>*/}
+                {/*<li class="nav-item">*/}
+                {/*    <a class="nav-link" href="/products">Products</a>*/}
+                {/*</li>*/}
+                {/*<li class="nav-item">*/}
+                {/*    <a class="nav-link" href="/dashboard">Dashboard</a>*/}
+                {/*</li>*/}
+
+                <Link to="/customers">Customers</Link>
+                <Link to="/leads">Leads</Link>
+                <Link to="/products">Producst</Link>
+                <Link to="/dashboard">Dashboard</Link>
             </ul>
         );
     }

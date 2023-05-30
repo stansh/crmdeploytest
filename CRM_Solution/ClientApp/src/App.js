@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
@@ -12,26 +12,62 @@ import { Counter } from './components/Counter';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
-
+import authService from './components/api-authorization/AuthorizeService'
+import { UserManager } from 'oidc-client';
 import './custom.css'
 
-export default class App extends Component {
-  static displayName = App.name;
+//export default class App extends Component {
+//    static displayName = App.name;
 
-  render () {
+//    static x = UserManager;
+    
+
+//  render () {
+//    return (
+//      <Layout>
+//        <Route exact path='/' component={Home} />
+//        <Route path='/counter' component={Counter} />
+//            {/*<AuthorizeRoute path='/fetch-data' component={FetchData} />*/}
+//            <AuthorizeRoute path='/customers' component={Customers} />
+//            <AuthorizeRoute path='/products' component={Products} />
+//            <AuthorizeRoute path='/leads' component={Leads} />
+//            <AuthorizeRoute path='/addForm' component={AddForm} />
+//            <AuthorizeRoute path='/dashboard' component={Dashboard} />
+
+//        <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
+//      </Layout>
+//    );
+//  }
+//}
+
+
+function App(props) {
+    const [user, setUser] = useState(null)
+
+   
+    
+
+    useEffect(() => {
+        
+       authService.getUser().then(res => setUser(res));
+        console.log(user)
+    },[])
+
     return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-            {/*<AuthorizeRoute path='/fetch-data' component={FetchData} />*/}
+        <Layout>
+            <Route exact path='/' component={Home} />
+            <Route path='/counter' component={Counter} />
             <AuthorizeRoute path='/customers' component={Customers} />
             <AuthorizeRoute path='/products' component={Products} />
             <AuthorizeRoute path='/leads' component={Leads} />
             <AuthorizeRoute path='/addForm' component={AddForm} />
             <AuthorizeRoute path='/dashboard' component={Dashboard} />
 
-        <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
-      </Layout>
-    );
-  }
+            <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
+        </Layout>
+        
+
+        );
 }
+
+export default App;
