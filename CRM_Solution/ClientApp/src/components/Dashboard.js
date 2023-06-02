@@ -81,7 +81,38 @@ export function Dashboard(props) {
             },
         },
     };
-	
+
+
+    useEffect(() => {
+       // setLoading(true)
+        const token = authService.getAccessToken();
+
+        //authService.getUser().then(res => setUser(res))
+        //console.log(user)
+
+        fetch('/api/GraphController', {
+            headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
+        })
+            .then(response => {
+                if (response.ok) {
+                    //setLoading(false);
+                    return response;
+                } else {
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                    error.response = response;
+                   // setError(error)
+                    throw error;
+                }
+            })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+
+            })
+            .catch(error => { console.log('Error: ', error.message) })
+
+
+    }, [])
 
 
     return (
@@ -89,10 +120,10 @@ export function Dashboard(props) {
 
             <h3> Dashboard</h3>
             <div className="row">
-                <div className="col">
+                <div className="col-5">
                     <Pie data={data}  />
                 </div>
-                <div className="col">
+                <div className="col-5">
                     <Bar options={options} data={data2}  />
                 </div>
                

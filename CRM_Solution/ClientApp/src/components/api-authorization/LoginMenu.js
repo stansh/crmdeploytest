@@ -29,6 +29,7 @@ export class LoginMenu extends Component {
             isAuthenticated,
             userName: user && user.name
         });
+        user ? localStorage.setItem("userRole", user.role.toString()) : localStorage.setItem("userRole", null)
     }
 
     render() {

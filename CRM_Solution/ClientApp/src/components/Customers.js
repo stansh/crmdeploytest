@@ -36,6 +36,11 @@ export function Customers(props) {
         setTimeout(() => {
             setAlert(false)
         }, "3000");
+
+        setTimeout(() => {
+            window.location.reload()
+        }, "3500" );
+
        
     }
 
@@ -47,6 +52,10 @@ export function Customers(props) {
         setTimeout(() => {
             setAlert2(false)   
         }, "3000");
+
+        setTimeout(() => {
+            window.location.reload()
+        }, "3500");
        
        
     }
@@ -58,6 +67,10 @@ export function Customers(props) {
         setTimeout(() => {
             setAlert3(false)        
         }, "3000");
+
+        setTimeout(() => {
+            window.location.reload()
+        }, "3500");
       
 
     }
@@ -65,17 +78,16 @@ export function Customers(props) {
 
     const toggle = () => {
         setModal(!modal);
-         const user = authService.getUser();
-            console.log(user);
+        // const user = authService.getUser();
+        //    console.log(user);
 
         
-        var x = authService.getAccessToken();
-        console.log(x)
-
-        
-           
+        //var x = authService.getAccessToken();
+        //console.log(x)   
 
     }
+
+
     const toggle2 = (event) => {
         setModal2(!modal2);
         if (modal2 === false) {
@@ -400,14 +412,14 @@ export function Customers(props) {
             </Modal>
             <Modal isOpen={modal2} toggle={toggle2} id="editCustModal">
                 <ModalHeader closeButton>
-                    Edit Customer
+                    Edit Customer Information
                 </ModalHeader>
                 <ModalBody className="row" >
                     <div id="currentCustData" className="col-5"  >
-                        <h6>{firstName} {lastName}</h6>
-                        <h6>{phone}</h6>
-                        <h6>{email}</h6>
-                        <h6>{street}, {city}, {state} {zipcode}</h6>
+                        <h6><i>Name: </i><br/>{firstName} {lastName}</h6>
+                        <h6><i>Phone: </i><br />{phone}</h6>
+                        <h6><i>E-mail: </i><br />{email}</h6>
+                        <h6><i>Address: </i><br />{street}, {city}, {state} {zipcode}</h6>
 
                         
                     </div>
@@ -527,7 +539,7 @@ export function Customers(props) {
                 </ModalBody>
                 <ModalFooter>
                     <Button variant="secondary" onClick={deleteCustomer}>
-                        Submit
+                        Delete
                     </Button>
                     <Button variant="primary" onClick={toggle3}>
                         Cancel

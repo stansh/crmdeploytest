@@ -17,6 +17,7 @@ namespace CRM_Solution.Models
         }
 
         public virtual DbSet<Customer> Customers { get; set; } = null!;
+        public virtual DbSet<GraphDatum> GraphData { get; set; } = null!;
         public virtual DbSet<Lead> Leads { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
 
@@ -74,6 +75,17 @@ namespace CRM_Solution.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("zipcode");
+            });
+
+            modelBuilder.Entity<GraphDatum>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.X)
+                    .HasColumnType("decimal(4, 2)")
+                    .HasColumnName("x");
+
+                entity.Property(e => e.Y).HasColumnName("y");
             });
 
             modelBuilder.Entity<Lead>(entity =>

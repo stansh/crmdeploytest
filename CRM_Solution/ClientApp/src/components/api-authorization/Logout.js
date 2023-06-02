@@ -34,6 +34,7 @@ export class Logout extends Component {
                 break;
             case LogoutActions.LoggedOut:
                 this.setState({ isReady: true, message: "You successfully logged out!" });
+                localStorage.setItem("userRole", null)
                 break;
             default:
                 throw new Error(`Invalid action '${action}'`);

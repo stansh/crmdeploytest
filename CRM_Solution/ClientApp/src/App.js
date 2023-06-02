@@ -12,8 +12,6 @@ import { Counter } from './components/Counter';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
-import authService from './components/api-authorization/AuthorizeService'
-import { UserManager } from 'oidc-client';
 import './custom.css'
 
 //export default class App extends Component {
@@ -42,15 +40,15 @@ import './custom.css'
 
 
 function App(props) {
-    const [user, setUser] = useState(null)
+    //const [user, setUser] = useState(null)
 
-   
-    
+    console.log(localStorage.getItem("userRole"))
+ 
 
     useEffect(() => {
+       
         
-       authService.getUser().then(res => setUser(res));
-        console.log(user)
+        
     },[])
 
     return (
