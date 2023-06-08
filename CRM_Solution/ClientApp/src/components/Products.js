@@ -244,7 +244,7 @@ export function Products(props) {
 
     return (
         <>
-            <h3>Products</h3>
+            <h3 className="pageTitle">Products</h3>
             {loading && !error && <Spinner children="" />}
             {error && <h3>{error.message}</h3>}
             {!error && <Button color="secondary" onClick={toggle}>Add Product</Button>}

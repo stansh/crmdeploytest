@@ -25,7 +25,7 @@
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
       },
      // enable swagger
-     // "launchUrl": "swagger"
+      //"launchUrl": "swagger"
     }
   }
 }

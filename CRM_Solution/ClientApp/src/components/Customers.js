@@ -120,7 +120,7 @@ export function Customers(props) {
         const token = authService.getAccessToken();
 
         //authService.getUser().then(res => setUser(res))
-        //console.log(user)
+        //console.log(token)
 
         fetch('/api/customers', {
             headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
@@ -270,7 +270,7 @@ export function Customers(props) {
  
     return (
             <>
-            <h3>Customers</h3>
+            <h3 className = "pageTitle">Customers</h3>
             {loading && !error &&  <Spinner children="" />}
             {error && <h3>{error.message}</h3>}
             {!error && <Button color="secondary" onClick={toggle}>Add Customer</Button>}

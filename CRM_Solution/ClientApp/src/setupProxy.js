@@ -14,7 +14,8 @@ const context =  [
   "/_framework",
     "/api/customers",
     "/api/leads",
-    "/api/products"
+    "/api/products",
+    "/api/graph",
     
   
 ]  

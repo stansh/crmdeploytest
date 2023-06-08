@@ -9,9 +9,12 @@ import {
     Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale,
     LinearScale,
     BarElement,
-    Title
-    } from 'chart.js';
-import { Pie, Bar } from 'react-chartjs-2';
+    Title,
+    PointElement,
+    LineElement } from 'chart.js';
+
+
+import { Pie, Bar,Line } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker'
 
 ChartJS.register(ArcElement,
@@ -22,109 +25,164 @@ ChartJS.register(ArcElement,
     BarElement,
     Title,
     Tooltip,
-    Legend);
+    Legend,
+    CategoryScale,
+    PointElement,
+    LineElement);
 
 
 
 
 
 export function Dashboard(props) {
+    const [graphData, setGraphData] = useState([]);
 
-    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-    const data = {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+   //pie
+    const pieData = {
+        
+        labels: ['Product 1', 'Product 1', 'Product 3'],
+        sise: '200px',
         datasets: [
             {
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                label: 'Portion of Total Sales:',
+                data: [12, 19, 3],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
+                    '#E6853099',
+                    '#99501199',
+                    '#FFA14F99'
+                    
+                  
                 ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                ],
-                borderWidth: 10,
+                //borderColor: [
+                //    'rgba(255, 99, 132, 1)',
+                //    'rgba(54, 162, 235, 1)',
+                //    'rgba(255, 206, 86, 1)'
+                   
+                //],
+                borderWidth: 2,
             },
         ],
+        
+            title: {
+                display: true,
+                text: 'Sales This Year',
+            },
+       
     };
-    const data2 = {
+
+    //bar
+    const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
+    const barData = {
         labels,
         datasets: [
             {
                 fill: true,
-                label: 'Dataset 2',
-                data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-                borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+               // label: 'Dataset 2',
+                /*data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),*/
+                data: graphData.map(dSet => dSet.x),
+               // borderColor: 'rgb(53, 162, 235)',
+                backgroundColor: '#FFA14FAA',
             },
         ],
     };
-    const options = {
+    const barOptions = {
         responsive: true,
         plugins: {
             legend: {
-                position: 'top',
+                position: 'bottom',
+                display: false
             },
             title: {
                 display: true,
-                text: 'Chart.js Line Chart',
+                text: 'Sales This Year',
             },
         },
     };
 
+    //line
+
+    const lineOptions = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                text: 'Top Selling 3 Products',
+            },
+        },
+    };
+
+    //const labels2 = ['January', 'February', 'March', 'April', 'May', 'June'];
+
+    const lineData = {
+        labels,
+        datasets: [
+            {
+                label: 'Product 1',
+                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
+                borderColor: '#995011FF',
+                backgroundColor: '#99501122',
+            },
+            {
+                label: 'Product 2',
+                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
+                borderColor: '#027D99ff',
+                backgroundColor: '#027D9922',
+            },
+            {
+                label: 'Product 3',
+                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
+                borderColor: '#47E6AAff',
+                backgroundColor: '#47E6AA22',
+            },
+
+
+        ],
+    };
+
 
     useEffect(() => {
-       // setLoading(true)
         const token = authService.getAccessToken();
 
-        //authService.getUser().then(res => setUser(res))
-        //console.log(user)
 
-        fetch('/api/GraphController', {
+        fetch('/api/graph', {
             headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
         })
             .then(response => {
                 if (response.ok) {
-                    //setLoading(false);
                     return response;
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`);
                     error.response = response;
-                   // setError(error)
+                    //setError(error)
                     throw error;
                 }
             })
             .then(res => res.json())
             .then(res => {
-                console.log(res);
-
+                setGraphData(res)
             })
             .catch(error => { console.log('Error: ', error.message) })
 
 
     }, [])
 
-
+    console.log(graphData)
     return (
         <>
 
-            <h3> Dashboard</h3>
-            <div className="row">
-                <div className="col-5">
-                    <Pie data={data}  />
+            <h3 className="pageTitle"> Dashboard</h3>
+            <div className="row ml-5">
+                <div className="col-2 ">
+                    <Pie data={pieData}  />
                 </div>
-                <div className="col-5">
-                    <Bar options={options} data={data2}  />
+                <div className="col-3 mx-4">
+                    <Bar options={barOptions} data={barData}  />
+                </div>
+                <div className="col-3 mx-4">
+                    <Line options={lineOptions} data={lineData} />
                 </div>
                
                 

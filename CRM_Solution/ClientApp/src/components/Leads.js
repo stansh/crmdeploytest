@@ -261,7 +261,7 @@ export function Leads(props) {
 
     return (
         <>
-            <h3>Leads</h3>
+            <h3 className="pageTitle">Leads</h3>
             {loading && !error && <Spinner children="" />}
             {error && <h3>{error.message}</h3>}
             {!error && <Button color="secondary" onClick={toggle}>Add Lead</Button>}

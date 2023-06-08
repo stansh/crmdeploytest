@@ -8,13 +8,16 @@ export class Layout extends Component {
 
   render () {
     return (
-          <div>
-            <NavMenu />
-            <Container >
+        <div class = "container-fluid" >
+            
+            <Container fluid>
+                <NavMenu class = "nav"/>
+               
                 <div class="row" >
-                    <SideNav class="col-lg-1" />
+                    <SideNav />
                     <div class="col-lg-10"> {this.props.children}</div>
                 </div>
+
         
             </Container>
       </div>
