@@ -395,7 +395,7 @@ export function Products(props) {
                 </ModalHeader>
                 <ModalBody className="row" >
 
-                    <h6>Are sure that you want to delete the product?</h6>
+                    <h6>Are you sure that you want to delete the product?</h6>
 
                 </ModalBody>
                 <ModalFooter>

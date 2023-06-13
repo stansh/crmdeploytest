@@ -24,7 +24,7 @@ export class SideNav extends Component {
 
     render() {
         return (
-            <ul class="nav flex-column col-md-1">
+            <ul class="nav flex-column col-lg-1 pb-3"  >
 
                 <Link to="/customers">Customers</Link>
                 <Link to="/leads">Leads</Link>

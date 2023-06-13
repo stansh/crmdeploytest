@@ -534,7 +534,7 @@ export function Customers(props) {
                 </ModalHeader>
                 <ModalBody className="row" >
                 
-                        <h6>Are sure that you want to delete the customer?</h6>
+                        <h6>Are you sure that you want to delete the customer?</h6>
 
                 </ModalBody>
                 <ModalFooter>

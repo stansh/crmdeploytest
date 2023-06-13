@@ -11,10 +11,11 @@ import {
     BarElement,
     Title,
     PointElement,
-    LineElement } from 'chart.js';
+    LineElement,
+    Filler } from 'chart.js';
 
 
-import { Pie, Bar,Line } from 'react-chartjs-2';
+import { Pie, Bar, Line } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker'
 
 ChartJS.register(ArcElement,
@@ -28,7 +29,8 @@ ChartJS.register(ArcElement,
     Legend,
     CategoryScale,
     PointElement,
-    LineElement);
+    LineElement,
+    Filler);
 
 
 
@@ -41,14 +43,14 @@ export function Dashboard(props) {
     const pieData = {
         
         labels: ['Product 1', 'Product 1', 'Product 3'],
-        sise: '200px',
+    
         datasets: [
             {
                 label: 'Portion of Total Sales:',
                 data: [12, 19, 3],
                 backgroundColor: [
                     '#E6853099',
-                    '#99501199',
+                    '#027D9999',
                     '#FFA14F99'
                     
                   
@@ -70,6 +72,8 @@ export function Dashboard(props) {
        
     };
 
+  
+
     //bar
     const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
     const barData = {
@@ -86,7 +90,7 @@ export function Dashboard(props) {
         ],
     };
     const barOptions = {
-        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'bottom',
@@ -102,7 +106,7 @@ export function Dashboard(props) {
     //line
 
     const lineOptions = {
-        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'bottom'
@@ -143,6 +147,58 @@ export function Dashboard(props) {
     };
 
 
+    //line 2
+
+    const lineOptions2 = {
+   
+        
+        plugins: {
+            legend: {
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                text: 'Annual Sales History ',
+            },
+        },
+    };
+
+   
+
+    const lineData2 = {
+        labels,
+        datasets: [
+           
+            {
+                fill: true,
+                label: '2021',
+                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000})),
+                borderColor: '#47E6AA33',
+                backgroundColor: '#47E6AA11',
+
+            },
+            {
+                fill: true,
+                label: '2022',
+                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000 })),
+                borderColor: '#99501122',
+                backgroundColor: '#99501122',
+
+            },
+            {
+                fill: true,
+                label: '2023',
+                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000 })),
+                borderColor: '#027D99ff',
+                backgroundColor: '#027D9944',
+
+            },
+        ],
+    };
+
+
+
+
     useEffect(() => {
         const token = authService.getAccessToken();
 
@@ -169,26 +225,30 @@ export function Dashboard(props) {
 
     }, [])
 
-    console.log(graphData)
+    
     return (
         <>
 
             <h3 className="pageTitle"> Dashboard</h3>
-            <div className="row ml-5">
-                <div className="col-2 ">
+            <div className="row ml-5 ml-2">
+                <div className="col-lg-3 mx-5">
                     <Pie data={pieData}  />
                 </div>
-                <div className="col-3 mx-4">
+                <div className="col-lg-3 mx-5">
                     <Bar options={barOptions} data={barData}  />
                 </div>
-                <div className="col-3 mx-4">
+                <div className="col-lg-3 mx-5" >
                     <Line options={lineOptions} data={lineData} />
                 </div>
-               
-                
+            </div>
+            <div className="row mt-5" >
+                <div className="col-lg-12" >
+                    <Line options={lineOptions2} data={lineData2} />
+                </div>
+
 
             </div>
             
         </>
     )
-}
+} 

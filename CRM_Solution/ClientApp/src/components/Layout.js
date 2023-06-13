@@ -8,7 +8,7 @@ export class Layout extends Component {
 
   render () {
     return (
-        <div class = "container-fluid" >
+        <div class= "" >
             
             <Container fluid>
                 <NavMenu class = "nav"/>
