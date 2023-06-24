@@ -3,159 +3,193 @@ i:{00000000-0000-0000-0000-000000000000}:CRM_Solution.sln
 ++CRM_Solution
 i:{00000000-0000-0000-0000-000000000000}:CRM_Solution
 ++Connected Services 
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86505
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101165
 ++Dependencies
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86504
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101164
 ++Properties
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\
-++launchSettings.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\launchsettings.json
-++serviceDependencies.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\servicedependencies.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\
 ++ClientApp
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\
 ++public
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\public\
+++Images
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\public\images\
+++favicon.ico
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\public\favicon.ico
+++index.html
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\public\index.html
 ++src
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\
+++components
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\
+++App.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\app.js
+++custom.css
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\custom.css
+++index.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\index.js
+++manifest.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\manifest.json
+++reportWebVitals.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\reportwebvitals.js
+++service-worker.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\service-worker.js
+++serviceWorkerRegistration.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\serviceworkerregistration.js
+++setupProxy.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\setupproxy.js
+++setupTests.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\setuptests.js
 ++.env
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\.env
 ++.gitignore
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.gitignore
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\.gitignore
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\.gitignore
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\.gitignore
 ++aspnetcore-https.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\aspnetcore-https.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\aspnetcore-https.js
 ++aspnetcore-react.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\aspnetcore-react.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\aspnetcore-react.js
 ++package.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\package.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\package.json
 ++README.md
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\readme.md
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\readme.md
 ++Controllers
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\
-++CustomersController.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\customerscontroller.cs
-++LeadsController.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\leadscontroller.cs
-++OidcConfigurationController.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\oidcconfigurationcontroller.cs
-++ProductsController.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\productscontroller.cs
-++WeatherForecastController.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\controllers\weatherforecastcontroller.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\
 ++Data
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\
 ++Migrations
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\migrations\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\migrations\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\migrations\
 ++ApplicationDbContext.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\applicationdbcontext.cs
-++aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\migrations\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\applicationdbcontext.cs
+++Identity
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\identity\
 ++Models
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\
-++ApplicationUser.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\applicationuser.cs
-++aspnet53bc9b9d9d6a45d484292a2761773502Context.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnet53bc9b9d9d6a45d484292a2761773502context.cs
-++AspNetRole.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetrole.cs
-++AspNetRoleClaim.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetroleclaim.cs
-++AspNetUser.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuser.cs
-++AspNetUserClaim.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuserclaim.cs
-++AspNetUserLogin.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetuserlogin.cs
-++AspNetUserToken.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\aspnetusertoken.cs
-++CRMDATAContext.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\crmdatacontext.cs
-++Customer.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\customer.cs
-++DeviceCode.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\devicecode.cs
-++Key.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\key.cs
-++Lead.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\lead.cs
-++MockDatum.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\mockdatum.cs
-++PersistedGrant.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\persistedgrant.cs
-++Product.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\models\product.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\
 ++Pages
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\
 ++Shared
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\shared\
-++_LoginPartial.cshtml
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\shared\_loginpartial.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\shared\
 ++_ViewImports.cshtml
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\_viewimports.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\_viewimports.cshtml
 ++Error.cshtml
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\error.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\error.cshtml
+++.npmignore
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\.npmignore
 ++appsettings.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\appsettings.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\appsettings.json
 ++libman.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\libman.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\libman.json
 ++Program.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\program.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\program.cs
 ++WeatherForecast.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\weatherforecast.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\weatherforecast.cs
 ++Secrets.json (Local)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86540
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101200
 ++SQL Server Database (ConnectionStrings:data)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86539
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101199
 ++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86541
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101201
 ++Analyzers
 i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:analyzers
 ++Frameworks
 i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:frameworks
 ++Packages
 i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:packages
-++serviceDependencies.local.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\properties\servicedependencies.local.json
-++Images
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\images\
-++favicon.ico
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\favicon.ico
-++index.html
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\index.html
-++components
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\
-++App.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\app.js
-++custom.css
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\custom.css
-++index.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\index.js
-++manifest.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\manifest.json
-++reportWebVitals.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\reportwebvitals.js
-++service-worker.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\service-worker.js
-++serviceWorkerRegistration.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\serviceworkerregistration.js
-++setupProxy.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\setupproxy.js
-++setupTests.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\setuptests.js
+++PublishProfiles
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\publishprofiles\
+++ServiceDependencies
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\servicedependencies\
+++launchSettings.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\launchsettings.json
+++serviceDependencies.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\servicedependencies.json
+++logo.PNG
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\public\images\logo.png
+++api-authorization
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\
+++Customers.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\customers.js
+++Dashboard.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\dashboard.js
+++Home.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\home.js
+++Layout.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\layout.js
+++Leads.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\leads.js
+++NavMenu.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\navmenu.js
+++Products.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\products.js
+++SideNav.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\sidenav.js
+++Style.css
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\style.css
+++App.test.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\app.test.js
 ++.env.development
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env.development
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\.env.development
 ++package-lock.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\package-lock.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\package-lock.json
+++CustomersController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\customerscontroller.cs
+++GraphController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\graphcontroller.cs
+++LeadsController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\leadscontroller.cs
+++OidcConfigurationController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\oidcconfigurationcontroller.cs
+++ProductsController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\productscontroller.cs
+++WeatherForecastController.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\controllers\weatherforecastcontroller.cs
 ++00000000000000_CreateIdentitySchema.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\00000000000000_createidentityschema.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\migrations\00000000000000_createidentityschema.cs
 ++ApplicationDbContextModelSnapshot.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\applicationdbcontextmodelsnapshot.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\migrations\applicationdbcontextmodelsnapshot.cs
+++ProfileService.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\identity\profileservice.cs
+++aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\migrations\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs
+++ApplicationUser.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\applicationuser.cs
+++aspnet53bc9b9d9d6a45d484292a2761773502Context.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnet53bc9b9d9d6a45d484292a2761773502context.cs
+++AspNetRole.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetrole.cs
+++AspNetRoleClaim.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetroleclaim.cs
+++AspNetUser.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetuser.cs
+++AspNetUserClaim.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetuserclaim.cs
+++AspNetUserLogin.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetuserlogin.cs
+++AspNetUserToken.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\aspnetusertoken.cs
+++CRMDATAContext.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\crmdatacontext.cs
+++Customer.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\customer.cs
+++DeviceCode.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\devicecode.cs
+++GraphDatum.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\graphdatum.cs
+++Key.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\key.cs
+++Lead.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\lead.cs
+++PersistedGrant.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\persistedgrant.cs
+++Product.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\models\product.cs
+++_LoginPartial.cshtml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\shared\_loginpartial.cshtml
 ++Error.cshtml.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\pages\error.cshtml.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\pages\error.cshtml.cs
 ++appsettings.Development.json
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\appsettings.development.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\appsettings.development.json
 ++MessagePackAnalyzer
 i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
 ++Microsoft.AspNetCore.Analyzers
@@ -187,78 +221,56 @@ i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\sdk\6.0.202\sdk
 ++System.Text.Json.SourceGeneration
 i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 ++Microsoft.AspNetCore.App
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\microsoft.aspnetcore.app
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\microsoft.netcore.app
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\microsoft.netcore.app
 ++Autofac (7.0.0)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86538
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101198
 ++Microsoft.AspNetCore.ApiAuthorization.IdentityServer (6.0.4)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86537
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101197
 ++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.4)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86529
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101189
 ++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.15)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86530
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101190
 ++Microsoft.AspNetCore.Identity.UI (6.0.4)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86536
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101196
 ++Microsoft.AspNetCore.SpaProxy (6.0.4)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86532
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101192
 ++Microsoft.EntityFrameworkCore.Relational (6.0.15)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86531
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101191
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.15)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86527
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101187
 ++Microsoft.EntityFrameworkCore.Tools (6.0.15)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86533
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101193
 ++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.13)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86535
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101195
 ++Swashbuckle.AspNetCore (6.3.0)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86528
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101188
 ++VS2012-Javascript-Intellisense (1.0.712.2147)
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>86534
-++logo.PNG
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\public\images\logo.png
-++api-authorization
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\
-++AddForm.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\addform.js
-++Counter.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\counter.js
-++Customers.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\customers.js
-++FetchData.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\fetchdata.js
-++Home.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\home.js
-++Layout.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\layout.js
-++Leads.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\leads.js
-++NavMenu.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\navmenu.js
-++Products.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\products.js
-++qqCustomers - Copy.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\qqcustomers - copy.js
-++SideNav.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\sidenav.js
-++Style.css
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\style.css
-++App.test.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\app.test.js
-++.env.development.local
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\.env.development.local
-++00000000000000_CreateIdentitySchema.Designer.cs
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\data\migrations\00000000000000_createidentityschema.designer.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:>101194
+++CRMSolution20230622221010 - Web Deploy.pubxml
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\publishprofiles\crmsolution20230622221010 - web deploy.pubxml
+++CRMSolution20230622221010 - Web Deploy
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\servicedependencies\crmsolution20230622221010 - web deploy\
+++serviceDependencies.local.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\servicedependencies.local.json
 ++ApiAuthorizationConstants.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\apiauthorizationconstants.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\apiauthorizationconstants.js
 ++ApiAuthorizationRoutes.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\apiauthorizationroutes.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\apiauthorizationroutes.js
 ++AuthorizeRoute.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\authorizeroute.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\authorizeroute.js
 ++AuthorizeService.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\authorizeservice.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\authorizeservice.js
 ++Login.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\login.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\login.js
 ++LoginMenu.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\loginmenu.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\loginmenu.js
 ++Logout.js
-i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\crm\crm_solution\crm_solution\clientapp\src\components\api-authorization\logout.js
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\src\components\api-authorization\logout.js
+++.env.development.local
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\clientapp\.env.development.local
+++00000000000000_CreateIdentitySchema.Designer.cs
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\data\migrations\00000000000000_createidentityschema.designer.cs
+++profile.arm.json
+i:{c3e326d2-3448-4cf3-968e-b359feb12ebf}:c:\users\fedya topor\desktop\hackathons\reacttest\crm_app\crm_solution\properties\servicedependencies\crmsolution20230622221010 - web deploy\profile.arm.json
