@@ -131,9 +131,9 @@ app.MapControllerRoute(
 
 #endregion
 
-
+app.UseStaticFiles();
 app.MapRazorPages();
 
 app.MapFallbackToFile("index.html"); ;
 
-app.Run();
+//app.Run();
