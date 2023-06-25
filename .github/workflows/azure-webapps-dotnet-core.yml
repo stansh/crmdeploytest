@@ -23,6 +23,7 @@ env:
   AZURE_WEBAPP_NAME: CRM Solution    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0'                 # set this to the .NET Core version to use
+  CLIENT_APP_PATH: 'CRM_Solution/ClientApp'
 
 on:
   push:
@@ -58,10 +59,10 @@ jobs:
           node-version: 18.16.1
 
       - name: Install dependencies 
-        run: npm install --prefix ${{env.DOTNET_ROOT}}/myapp/ClientApp
+        run: npm install --prefix CRM_Solution/ClientApp
 
       - name: Build React app
-        run: npm run build --prefix ${{env.DOTNET_ROOT}}/myapp
+        run: npm run build --prefix CRM_Solution/ClientApp
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
