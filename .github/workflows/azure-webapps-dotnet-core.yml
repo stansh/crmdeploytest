@@ -58,7 +58,7 @@ jobs:
           node-version: 18.16.1
 
       - name: Install dependencies
-        run: npm ci --prefix ClientApp
+        run: npm install --prefix ClientApp
 
       - name: Build React app
         run: npm run build --prefix ClientApp
