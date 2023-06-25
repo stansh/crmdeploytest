@@ -20,9 +20,10 @@
 name: Build and deploy ASP.Net Core app to an Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: your-app-name    # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: CRM Solution    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0'                 # set this to the .NET Core version to use
+  CLIENT_APP_PATH: 'CRM_Solution/ClientApp'
 
 on:
   push:
@@ -57,11 +58,11 @@ jobs:
         with:
           node-version: 18.16.1
 
-      - name: Install dependencies
-        run: npm install --prefix ClientApp
+      - name: Install dependencies 
+        run: npm install --prefix CRM_Solution/ClientApp
 
       - name: Build React app
-        run: npm run build --prefix ClientApp
+        run: npm run build --prefix CRM_Solution/ClientApp
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
