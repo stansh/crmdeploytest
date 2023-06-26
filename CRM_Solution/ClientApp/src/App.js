@@ -26,7 +26,7 @@ function App(props) {
 
     return (
         <Layout>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' component={Dashboard} />
             <AuthorizeRoute path='/customers' component={Customers} />
             <AuthorizeRoute path='/products' component={Products} />
             <AuthorizeRoute path='/leads' component={Leads} />
