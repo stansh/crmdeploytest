@@ -84,6 +84,8 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
@@ -131,9 +133,12 @@ app.MapControllerRoute(
 
 #endregion
 
-app.UseStaticFiles();
+
 app.MapRazorPages();
 
 app.MapFallbackToFile("index.html"); ;
 
-//app.Run();
+app.Run();
+
+
+
