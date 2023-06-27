@@ -1,5 +1,5 @@
 export const ApplicationName = 'CRM_Solution';
-///*export const ApplicationName = 'stascrmtest';*/
+
 export const QueryParameterNames = {
   ReturnUrl: 'returnUrl',
   Message: 'message'
