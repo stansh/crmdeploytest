@@ -231,18 +231,18 @@ export function Dashboard(props) {
 
             <h3 className="pageTitle"> Dashboard</h3>
             <div className="row ml-5 ml-2">
-                <div className="col-lg-3 mx-5">
+                <div className="col-lg-2 mx-5">
                     <Pie data={pieData}  />
                 </div>
-                <div className="col-lg-3 mx-5">
+                <div className="col-lg-2 mx-5">
                     <Bar options={barOptions} data={barData}  />
                 </div>
-                <div className="col-lg-3 mx-5" >
+                <div className="col-lg-2 mx-5" >
                     <Line options={lineOptions} data={lineData} />
                 </div>
             </div>
             <div className="row mt-5" >
-                <div className="col-lg-12" >
+                <div className="col-lg-8" >
                     <Line options={lineOptions2} data={lineData2} />
                 </div>
 

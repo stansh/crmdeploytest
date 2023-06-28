@@ -27,10 +27,14 @@ function App(props) {
     return (
         <Layout>
             <Route exact path='/' component={Dashboard} />
-            <AuthorizeRoute path='/customers' component={Customers} />
-            <AuthorizeRoute path='/products' component={Products} />
-            <AuthorizeRoute path='/leads' component={Leads} />
-            <AuthorizeRoute path='/dashboard' component={Dashboard} />
+            <Route path='/customers' component={Customers} />
+            <Route path='/products' component={Products} />
+            <Route path='/leads' component={Leads} />
+            <Route path='/dashboard' component={Dashboard} />
+            {/*<AuthorizeRoute path='/customers' component={Customers} />*/}
+            {/*<AuthorizeRoute path='/products' component={Products} />*/}
+            {/*<AuthorizeRoute path='/leads' component={Leads} />*/}
+            {/*<AuthorizeRoute path='/dashboard' component={Dashboard} />*/}
 
             <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
         </Layout>

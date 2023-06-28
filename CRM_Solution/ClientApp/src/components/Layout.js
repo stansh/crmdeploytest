@@ -13,7 +13,7 @@ export class Layout extends Component {
             <Container fluid>
                 <NavMenu class = "nav"/>
                
-                <div class="row" >
+                <div class="row mt-5 mx-2"  >
                     <SideNav />
                     <div class="col-lg-10"> {this.props.children}</div>
                 </div>
