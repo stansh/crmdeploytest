@@ -30,111 +30,111 @@ namespace CRM_Solution.Models
             }
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Customer>(entity =>
-            {
-                entity.Property(e => e.Id).HasColumnName("id");
+    //    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //    {
+    //        modelBuilder.Entity<Customer>(entity =>
+    //        {
+    //            entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.City)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("city");
+    //            entity.Property(e => e.City)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("city");
 
-                entity.Property(e => e.Email)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("email");
+    //            entity.Property(e => e.Email)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("email");
 
-                entity.Property(e => e.FirstName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("first_name");
+    //            entity.Property(e => e.FirstName)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("first_name");
 
-                entity.Property(e => e.LastName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("last_name");
+    //            entity.Property(e => e.LastName)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("last_name");
 
-                entity.Property(e => e.Phone)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("phone");
+    //            entity.Property(e => e.Phone)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("phone");
 
-                entity.Property(e => e.State)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("state");
+    //            entity.Property(e => e.State)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("state");
 
-                entity.Property(e => e.Street)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("street");
+    //            entity.Property(e => e.Street)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("street");
 
-                entity.Property(e => e.Zipcode)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("zipcode");
-            });
+    //            entity.Property(e => e.Zipcode)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("zipcode");
+    //        });
 
-            modelBuilder.Entity<GraphDatum>(entity =>
-            {
-                entity.Property(e => e.Id).HasColumnName("id");
+    //        modelBuilder.Entity<GraphDatum>(entity =>
+    //        {
+    //            entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.X)
-                    .HasColumnType("decimal(4, 2)")
-                    .HasColumnName("x");
+    //            entity.Property(e => e.X)
+    //                .HasColumnType("decimal(4, 2)")
+    //                .HasColumnName("x");
 
-                entity.Property(e => e.Y).HasColumnName("y");
-            });
+    //            entity.Property(e => e.Y).HasColumnName("y");
+    //        });
 
-            modelBuilder.Entity<Lead>(entity =>
-            {
-                entity.Property(e => e.Id).HasColumnName("id");
+    //        modelBuilder.Entity<Lead>(entity =>
+    //        {
+    //            entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Email)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("email");
+    //            entity.Property(e => e.Email)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("email");
 
-                entity.Property(e => e.FirstName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("first_name");
+    //            entity.Property(e => e.FirstName)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("first_name");
 
-                entity.Property(e => e.LastName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("last_name");
+    //            entity.Property(e => e.LastName)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("last_name");
 
-                entity.Property(e => e.Phone)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("phone");
-            });
+    //            entity.Property(e => e.Phone)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("phone");
+    //        });
 
-            modelBuilder.Entity<Product>(entity =>
-            {
-                entity.Property(e => e.Id).HasColumnName("id");
+    //        modelBuilder.Entity<Product>(entity =>
+    //        {
+    //            entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Description)
-                    .HasColumnType("text")
-                    .HasColumnName("description");
+    //            entity.Property(e => e.Description)
+    //                .HasColumnType("text")
+    //                .HasColumnName("description");
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("name");
+    //            entity.Property(e => e.Name)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("name");
 
-                entity.Property(e => e.Price)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("price");
-            });
+    //            entity.Property(e => e.Price)
+    //                .HasMaxLength(50)
+    //                .IsUnicode(false)
+    //                .HasColumnName("price");
+    //        });
 
-            OnModelCreatingPartial(modelBuilder);
-        }
+    //        OnModelCreatingPartial(modelBuilder);
+    //    }
 
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    //    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

@@ -10,21 +10,53 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+//MongoDB
 
-var connectionString2 = builder.Configuration.GetConnectionString("data");
-builder.Services.AddDbContext<CRMDATAContext>(options =>
-    options.UseSqlServer(connectionString2));
+
+//const string connectionUri = "mongodb+srv://pogrebok:baza2021@cluster0.rie9l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+//var settings = MongoClientSettings.FromConnectionString(connectionUri);
+
+// Set the ServerApi field of the settings object to set the version of the Stable API on the client
+//settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+
+// Create a new client and connect to the server
+//var client = new MongoClient(settings);
+
+// Send a ping to confirm a successful connection
+//try
+//{
+//    var result = client.GetDatabase("crmdata").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+//    Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex);
+//}
+
+//MongoDB END
+
+
+
+// Add services to the container.
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseSqlServer(connectionString));
+
+//var connectionString2 = builder.Configuration.GetConnectionString("data");
+//builder.Services.AddDbContext<CRMDATAContext>(options =>
+//    options.UseSqlServer(connectionString2));
 
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
