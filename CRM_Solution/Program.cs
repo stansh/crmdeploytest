@@ -66,33 +66,30 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
       .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
-
-
+builder.Services.AddIdentityServer()
+    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
 //builder.Services.AddIdentityServer()
-//    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
-
-builder.Services.AddIdentityServer()
-            .AddApiAuthorization<ApplicationUser, ApplicationDbContext>(x =>
-            {
-                x.IdentityResources.Add(new IdentityResource("roles", "Roles", new[] { JwtClaimTypes.Role, ClaimTypes.Role }));
-                foreach (var c in x.Clients)
-                {
-                    c.AllowedScopes.Add("roles");
-                }
-                foreach (var a in x.ApiResources)
-                {
-                    a.UserClaims.Add(JwtClaimTypes.Role);
-                }
+//            .AddApiAuthorization<ApplicationUser, ApplicationDbContext>(x =>
+//            {
+//                x.IdentityResources.Add(new IdentityResource("roles", "Roles", new[] { JwtClaimTypes.Role, ClaimTypes.Role }));
+//                foreach (var c in x.Clients)
+//                {
+//                    c.AllowedScopes.Add("roles");
+//                }
+//                foreach (var a in x.ApiResources)
+//                {
+//                    a.UserClaims.Add(JwtClaimTypes.Role);
+//                }
 
 
-            });
+//            });
 
 
 
 
-builder.Services.AddAuthentication();
-    //.AddIdentityServerJwt();
+//builder.Services.AddAuthentication();
+//.AddIdentityServerJwt();
 
 
 
@@ -127,7 +124,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 //app.UseAuthentication();
-app.UseIdentityServer();
+//app.UseIdentityServer();
 //app.UseAuthorization();
 
 app.MapControllerRoute(
