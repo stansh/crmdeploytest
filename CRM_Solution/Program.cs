@@ -58,6 +58,10 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<CRMDATAContext>(options =>
 //    options.UseSqlServer(connectionString2));
 
+builder.Configuration.GetConnectionString("mongo");
+
+
+
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
