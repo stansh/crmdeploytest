@@ -13,9 +13,9 @@ namespace CRM_Solution.Controllers
     [ApiController]
     public class LeadsController : ControllerBase
     {
-        private readonly CRMDATAContext _context;
+        private readonly ols_CRMDATAContext _context;
 
-        public LeadsController(CRMDATAContext context)
+        public LeadsController(ols_CRMDATAContext context)
         {
             _context = context;
         }

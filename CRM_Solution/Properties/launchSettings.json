@@ -19,15 +19,15 @@
     },
 
 
-    //"Production": {
-    //  "commandName": "Project",
-    //  "launchBrowser": true,
-    //  "environmentVariables": {
-    //    "ASPNETCORE_ENVIRONMENT": "Production",
-    //    "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
-    //  },
-    //  "applicationUrl": "https://stascrmtest.azurewebsites.net/"
-    //},
+    "Production": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+      },
+      "applicationUrl": "https://stascrmtest.azurewebsites.net/"
+    },
 
 
 

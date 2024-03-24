@@ -11,6 +11,98 @@
       "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\controllers\\oidcconfigurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\controllers\\oidcconfigurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\ols_crmdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\ols_crmdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\graphdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\graphdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\devicecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\devicecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnetuserlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnetuserlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnetuserclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnetuserclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnetroleclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnetroleclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\aspnet53bc9b9d9d6a45d484292a2761773502context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\aspnet53bc9b9d9d6a45d484292a2761773502context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\persistedgrant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\persistedgrant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\migrations\\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\migrations\\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\identity\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\identity\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\.github\\workflows\\azure-webapps-dotnet-core.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\azure-webapps-dotnet-core.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -19,24 +111,8 @@
       "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\crm_solution\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\identity\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\identity\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\migrations\\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\migrations\\aspnet53bc9b9d9d6a45d484292a2761773502contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|solutionrelative:crm_solution\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3E326D2-3448-4CF3-968E-B359FEB12EBF}|CRM_Solution\\CRM_Solution.csproj|c:\\users\\administrator\\desktop\\hackathons\\crmdeploytest\\crm_solution\\crm_solution.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -50,28 +126,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "azure-webapps-dotnet-core.yml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\.github\\workflows\\azure-webapps-dotnet-core.yml",
-              "RelativeDocumentMoniker": ".github\\workflows\\azure-webapps-dotnet-core.yml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\.github\\workflows\\azure-webapps-dotnet-core.yml",
-              "RelativeToolTip": ".github\\workflows\\azure-webapps-dotnet-core.yml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-03-21T02:48:55.177Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "OidcConfigurationController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Controllers\\OidcConfigurationController.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Controllers\\OidcConfigurationController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Controllers\\OidcConfigurationController.cs",
+              "RelativeToolTip": "CRM_Solution\\Controllers\\OidcConfigurationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:40.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AspNetRole.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetRole.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\AspNetRole.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetRole.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\AspNetRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:23.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Customer.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:18.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeviceCode.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\DeviceCode.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\DeviceCode.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\DeviceCode.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\DeviceCode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:17.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GraphDatum.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\GraphDatum.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\GraphDatum.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\GraphDatum.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\GraphDatum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:16.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Key.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Key.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\Key.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Key.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\Key.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:14.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CRM_Solution\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CRM_Solution\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-21T02:26:38.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "serviceDependencies.json",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\serviceDependencies.json",
               "RelativeDocumentMoniker": "CRM_Solution\\Properties\\serviceDependencies.json",
@@ -84,7 +242,215 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\appsettings.json",
+              "RelativeDocumentMoniker": "CRM_Solution\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\appsettings.json",
+              "RelativeToolTip": "CRM_Solution\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-21T02:26:42.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AspNetRoleClaim.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetRoleClaim.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\AspNetRoleClaim.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetRoleClaim.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\AspNetRoleClaim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:24.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AspNetUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUser.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\AspNetUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUser.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\AspNetUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:26.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AspNetUserClaim.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUserClaim.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\AspNetUserClaim.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUserClaim.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\AspNetUserClaim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:27.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Program.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Program.cs",
+              "RelativeToolTip": "CRM_Solution\\Program.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T02:03:08.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AspNetUserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUserLogin.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\AspNetUserLogin.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\AspNetUserLogin.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\AspNetUserLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:28.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Lead.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Lead.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\Lead.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Lead.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\Lead.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:35.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\.gitignore",
+              "RelativeDocumentMoniker": "CRM_Solution\\.gitignore",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\.gitignore",
+              "RelativeToolTip": "CRM_Solution\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHgSURBVEhLtZVdTsJAFIWroTyDK3ELJuCbsA1ZhQRFRETkV6yV8AAsgAI\u002BugW3wAr0RUop7Tj3dmagtLXFhJOc3mEynXu\u002BSWmlg4oQcsSGqOFwSKcIzAcY7rFZdeZkWf42DOMsl7v8ZNsEazAYEMuyXF5zr7nXWG3bJqPRiMznc6Kqb1\u002BtdueUbePSMasoSASiN0sW2AJbwrSRMKwBJZNJKZVOJeJx\u002BaPRbHma\u002BDbAqzOMpBPa5DydxiZsSijGKoo30MZjrH8pm81iVRQFKygmxxNs6K9\u002Bv4/nvlqZ1CticBuOl8IGWS4NogsviWmuSe2p7uH2EMAKTQsn2FUmkxUnEKher4dPjH9ymjogva47BNXHWhgBXCRpomnOxB6KRKCqKhJsznoneUD6BSOoPFSjEUwnByJQlFf8l7rTO6ndyalZcm7TNEn5vhJG4CD8h\u002BAikwkn6HZf8F3jSSu8OfNt/yx0sqIEpbtyOAGsmE4nzsQeikTQ7jwTkxKItCyxX2qenBsIirelcAJAmB2KoNlq4/Psl1Z4K/UuQeGmGIGA6n02xbqPgIBuwH4FqN5o4vMMKYOSBhkI8oVrTwfPBwdWxOQYWt7D/P5duT768D7HJhFtU9MBVj5XyF\u002B59jywJOkX7ucXnGOxDX8AAAAASUVORK5CYII=",
+              "WhenOpened": "2024-03-24T18:23:38.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "aspnet53bc9b9d9d6a45d484292a2761773502Context.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\aspnet53bc9b9d9d6a45d484292a2761773502Context.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\aspnet53bc9b9d9d6a45d484292a2761773502Context.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\aspnet53bc9b9d9d6a45d484292a2761773502Context.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\aspnet53bc9b9d9d6a45d484292a2761773502Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:21.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ols_CRMDATAContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\ols_CRMDATAContext.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\ols_CRMDATAContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\ols_CRMDATAContext.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\ols_CRMDATAContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:13:14.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:20.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MongoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\MongoDbContext.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\MongoDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\MongoDbContext.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\MongoDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:12.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PersistedGrant.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\PersistedGrant.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\PersistedGrant.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\PersistedGrant.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\PersistedGrant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:08.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Models\\Product.cs",
+              "RelativeToolTip": "CRM_Solution\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:23:05.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CRM_Solution\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CRM_Solution\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T18:13:05.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "azure-webapps-dotnet-core.yml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\.github\\workflows\\azure-webapps-dotnet-core.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\azure-webapps-dotnet-core.yml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\.github\\workflows\\azure-webapps-dotnet-core.yml",
+              "RelativeToolTip": ".github\\workflows\\azure-webapps-dotnet-core.yml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-03-21T02:48:55.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "libman.json",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\libman.json",
               "RelativeDocumentMoniker": "CRM_Solution\\libman.json",
@@ -97,67 +463,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 24,
               "Title": "ProfileService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Identity\\ProfileService.cs",
               "RelativeDocumentMoniker": "CRM_Solution\\Identity\\ProfileService.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Identity\\ProfileService.cs",
               "RelativeToolTip": "CRM_Solution\\Identity\\ProfileService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T02:26:54.923Z"
+              "WhenOpened": "2024-03-21T02:26:54.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Migrations\\aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "CRM_Solution\\Migrations\\aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Migrations\\aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs",
               "RelativeToolTip": "CRM_Solution\\Migrations\\aspnet53bc9b9d9d6a45d484292a2761773502ContextModelSnapshot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T02:26:53.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\appsettings.json",
-              "RelativeDocumentMoniker": "CRM_Solution\\appsettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\appsettings.json",
-              "RelativeToolTip": "CRM_Solution\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-21T02:26:42.639Z",
+              "WhenOpened": "2024-03-21T02:26:53.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CRM_Solution\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CRM_Solution\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-21T02:26:38.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "CRM_Solution\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\Resources.resx",
-              "RelativeToolTip": "CRM_Solution\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-21T02:26:37.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "CRM_Solution",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\CRM_Solution.csproj",
               "RelativeDocumentMoniker": "CRM_Solution\\CRM_Solution.csproj",
@@ -168,16 +500,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Program.cs",
-              "RelativeDocumentMoniker": "CRM_Solution\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Program.cs",
-              "RelativeToolTip": "CRM_Solution\\Program.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAEEAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T02:03:08.091Z",
-              "EditorCaption": ""
+              "DocumentIndex": 27,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "CRM_Solution\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Hackathons\\crmdeploytest\\CRM_Solution\\Properties\\Resources.resx",
+              "RelativeToolTip": "CRM_Solution\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-21T02:26:37.347Z"
             }
           ]
         }

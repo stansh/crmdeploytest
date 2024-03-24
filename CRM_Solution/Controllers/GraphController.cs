@@ -11,9 +11,9 @@ namespace CRM_Solution.Controllers
     public class GraphController : ControllerBase
     {
 
-        private readonly CRMDATAContext _context;
+        private readonly ols_CRMDATAContext _context;
 
-        public GraphController(CRMDATAContext context)
+        public GraphController(ols_CRMDATAContext context)
         {
             _context = context;
         }

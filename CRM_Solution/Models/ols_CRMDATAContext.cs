@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CRM_Solution.Models
 {
-    public partial class CRMDATAContext : DbContext
+    public partial class ols_CRMDATAContext : DbContext
     {
-        public CRMDATAContext()
+        public ols_CRMDATAContext()
         {
         }
 
-        public CRMDATAContext(DbContextOptions<CRMDATAContext> options)
+        public ols_CRMDATAContext(DbContextOptions<ols_CRMDATAContext> options)
             : base(options)
         {
         }
