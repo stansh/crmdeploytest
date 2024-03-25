@@ -6,42 +6,81 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CRM_Solution.Models;
+using MongoDB.Driver;
+using System.Diagnostics;
+using static CRM_Solution.Controllers.LeadsController;
+
+
 
 namespace CRM_Solution.Controllers
 {
-    [Route("api/[controller]")]
+
+    [Route("api/leads")]
     [ApiController]
+
     public class LeadsController : ControllerBase
     {
-        private readonly ols_CRMDATAContext _context;
 
-        public LeadsController(ols_CRMDATAContext context)
+        private readonly leadRepository _leadRepository;
+
+        public LeadsController()
         {
-            _context = context;
+            var connectionString = Environment.GetEnvironmentVariable("MONGODB_URI");
+            var databaseName = "crmdata";
+            var collectionName = "leads";
+
+            _leadRepository = new leadRepository(connectionString, databaseName, collectionName);
         }
 
-        // GET: api/Leads
+
+        //LeadsRepository
+        public class leadRepository
+        {
+            private readonly IMongoCollection<Lead> _leads;
+
+            public leadRepository(string connectionString, string databaseName, string collectionName)
+            {
+                var client = new MongoClient(connectionString);
+                var database = client.GetDatabase(databaseName);
+                _leads = database.GetCollection<Lead>(collectionName);
+            }
+
+
+            public async Task<List<Lead>> Getleads() =>
+                await _leads.Find(_ => true).ToListAsync();
+
+            public async Task<Lead?> GetleadById(string id) =>
+                await _leads.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+
+            public async Task Addlead(Lead lead) =>
+                await _leads.InsertOneAsync(lead);
+
+            public async Task Updatelead(string id, Lead lead) =>
+                await _leads.ReplaceOneAsync(x => x.Id == id, lead);
+
+            public async Task Removelead(string id) =>
+                await _leads.DeleteOneAsync(x => x.Id == id);
+
+
+        }
+
+
+
+        // leads Endpoints:
+
+
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Lead>>> GetLeads()
-        {
-          if (_context.Leads == null)
-          {
-              return NotFound();
-          }
-            return await _context.Leads.ToListAsync();
-        }
+        public async Task<List<Lead>> Get() =>
+            await _leadRepository.Getleads();
 
-        // GET: api/Leads/5
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<Lead>> GetLead(int id)
+        public async Task<ActionResult<Lead>> Get(string id)
         {
-          if (_context.Leads == null)
-          {
-              return NotFound();
-          }
-            var lead = await _context.Leads.FindAsync(id);
+            var lead = await _leadRepository.GetleadById(id);
 
-            if (lead == null)
+            if (lead is null)
             {
                 return NotFound();
             }
@@ -49,75 +88,63 @@ namespace CRM_Solution.Controllers
             return lead;
         }
 
-        // PUT: api/Leads/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutLead(int id, Lead lead)
-        {
-            if (id != lead.Id)
-            {
-                return BadRequest();
-            }
 
-            _context.Entry(lead).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!LeadExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Leads
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Lead>> PostLead(Lead lead)
+        public async Task<IActionResult> Post(Lead lead)
         {
-          if (_context.Leads == null)
-          {
-              return Problem("Entity set 'CRMDATAContext.Leads'  is null.");
-          }
-            _context.Leads.Add(lead);
-            await _context.SaveChangesAsync();
+            await _leadRepository.Addlead(lead);
 
-            return CreatedAtAction("GetLead", new { id = lead.Id }, lead);
+            return CreatedAtAction(nameof(Get), new { id = lead.Id }, lead);
         }
 
-        // DELETE: api/Leads/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteLead(int id)
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(string id, [FromBody] Lead lead)
         {
-            if (_context.Leads == null)
-            {
-                return NotFound();
-            }
-            var lead = await _context.Leads.FindAsync(id);
-            if (lead == null)
+            var custToBeUpdated = _leadRepository.GetleadById(id);
+
+            if (custToBeUpdated is null)
             {
                 return NotFound();
             }
 
-            _context.Leads.Remove(lead);
-            await _context.SaveChangesAsync();
+            lead.Id = custToBeUpdated.Result.Id;
+
+            await _leadRepository.Updatelead(id, lead);
 
             return NoContent();
         }
 
-        private bool LeadExists(int id)
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
         {
-            return (_context.Leads?.Any(e => e.Id == id)).GetValueOrDefault();
+            var book = await _leadRepository.GetleadById(id);
+
+            if (book is null)
+            {
+                return NotFound();
+            }
+
+            await _leadRepository.Removelead(id);
+
+            return NoContent();
         }
+
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ using MongoDB.Bson;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//MongoDB
+#region MongoDB
 
 
 //const string connectionUri = "mongodb+srv://pogrebok:baza2021@cluster0.rie9l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
@@ -45,21 +45,7 @@ var builder = WebApplication.CreateBuilder(args);
 //    Console.WriteLine(ex);
 //}
 
-//MongoDB END
-
-
-
-// Add services to the container.
-//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(connectionString));
-
-//var connectionString2 = builder.Configuration.GetConnectionString("data");
-//builder.Services.AddDbContext<CRMDATAContext>(options =>
-//    options.UseSqlServer(connectionString2));
-
-builder.Configuration.GetConnectionString("mongo");
-
+#endregion MongoDB 
 
 
 
@@ -69,36 +55,8 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
       .AddRoles<IdentityRole>()
       .AddEntityFrameworkStores<ApplicationDbContext>();
 
-
 builder.Services.AddIdentityServer()
     .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
-
-//builder.Services.AddIdentityServer()
-//            .AddApiAuthorization<ApplicationUser, ApplicationDbContext>(x =>
-//            {
-//                x.IdentityResources.Add(new IdentityResource("roles", "Roles", new[] { JwtClaimTypes.Role, ClaimTypes.Role }));
-//                foreach (var c in x.Clients)
-//                {
-//                    c.AllowedScopes.Add("roles");
-//                }
-//                foreach (var a in x.ApiResources)
-//                {
-//                    a.UserClaims.Add(JwtClaimTypes.Role);
-//                }
-
-
-//            });
-
-
-
-
-//builder.Services.AddAuthentication();
-//.AddIdentityServerJwt();
-
-
-
-
-
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

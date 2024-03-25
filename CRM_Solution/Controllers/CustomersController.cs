@@ -6,21 +6,19 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CRM_Solution.Models;
-//using Microsoft.AspNetCore.Authorization;
 
-//using Microsoft.AspNetCore.Authorization;
 using MongoDB.Driver;
-//using static CRM_Solution.Controllers.CustomersController;
+
 using System.Diagnostics;
 using NuGet.Protocol.Plugins;
 using MongoDB.Bson;
 using static CRM_Solution.Controllers.CustomersController;
-//using System.Web.Http;
+
 
 
 namespace CRM_Solution.Controllers
 {
-    //[Route("api/[controller]")]
+    
     [Route("api/customers")]
     [ApiController]
 

@@ -6,42 +6,81 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CRM_Solution.Models;
+using MongoDB.Driver;
+using System.Diagnostics;
+using static CRM_Solution.Controllers.ProductsController;
+
+
 
 namespace CRM_Solution.Controllers
 {
-    [Route("api/[controller]")]
+
+    [Route("api/products")]
     [ApiController]
+
     public class ProductsController : ControllerBase
     {
-        private readonly ols_CRMDATAContext _context;
 
-        public ProductsController(ols_CRMDATAContext context)
+        private readonly productRepository _productRepository;
+
+        public ProductsController()
         {
-            _context = context;
+            var connectionString = Environment.GetEnvironmentVariable("MONGODB_URI");
+            var databaseName = "crmdata";
+            var collectionName = "products";
+
+            _productRepository = new productRepository(connectionString, databaseName, collectionName);
         }
 
-        // GET: api/Products
+
+        //productsRepository
+        public class productRepository
+        {
+            private readonly IMongoCollection<Product> _products;
+
+            public productRepository(string connectionString, string databaseName, string collectionName)
+            {
+                var client = new MongoClient(connectionString);
+                var database = client.GetDatabase(databaseName);
+                _products = database.GetCollection<Product>(collectionName);
+            }
+
+
+            public async Task<List<Product>> Getproducts() =>
+                await _products.Find(_ => true).ToListAsync();
+
+            public async Task<Product?> GetproductById(string id) =>
+                await _products.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+
+            public async Task Addproduct(Product product) =>
+                await _products.InsertOneAsync(product);
+
+            public async Task Updateproduct(string id, Product product) =>
+                await _products.ReplaceOneAsync(x => x.Id == id, product);
+
+            public async Task Removeproduct(string id) =>
+                await _products.DeleteOneAsync(x => x.Id == id);
+
+
+        }
+
+
+
+        // products Endpoints:
+
+
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
-        {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            return await _context.Products.ToListAsync();
-        }
+        public async Task<List<Product>> Get() =>
+            await _productRepository.Getproducts();
 
-        // GET: api/Products/5
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<ActionResult<Product>> Get(string id)
         {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            var product = await _context.Products.FindAsync(id);
+            var product = await _productRepository.GetproductById(id);
 
-            if (product == null)
+            if (product is null)
             {
                 return NotFound();
             }
@@ -49,75 +88,63 @@ namespace CRM_Solution.Controllers
             return product;
         }
 
-        // PUT: api/Products/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
-        {
-            if (id != product.Id)
-            {
-                return BadRequest();
-            }
 
-            _context.Entry(product).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProductExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Products
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct(Product product)
+        public async Task<IActionResult> Post(Product product)
         {
-          if (_context.Products == null)
-          {
-              return Problem("Entity set 'CRMDATAContext.Products'  is null.");
-          }
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+            await _productRepository.Addproduct(product);
 
-            return CreatedAtAction("GetProduct", new { id = product.Id }, product);
+            return CreatedAtAction(nameof(Get), new { id = product.Id }, product);
         }
 
-        // DELETE: api/Products/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(string id, [FromBody] Product product)
         {
-            if (_context.Products == null)
-            {
-                return NotFound();
-            }
-            var product = await _context.Products.FindAsync(id);
-            if (product == null)
+            var custToBeUpdated = _productRepository.GetproductById(id);
+
+            if (custToBeUpdated is null)
             {
                 return NotFound();
             }
 
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
+            product.Id = custToBeUpdated.Result.Id;
+
+            await _productRepository.Updateproduct(id, product);
 
             return NoContent();
         }
 
-        private bool ProductExists(int id)
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
         {
-            return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();
+            var book = await _productRepository.GetproductById(id);
+
+            if (book is null)
+            {
+                return NotFound();
+            }
+
+            await _productRepository.Removeproduct(id);
+
+            return NoContent();
         }
+
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
