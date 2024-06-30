@@ -19,7 +19,7 @@ const context =  [
     "/api/customers",
     "/api/leads",
     "/api/products",
-    "/api/graph",
+    "/api/kpidata",
     
   
 ]  

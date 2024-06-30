@@ -17,6 +17,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using Autofac.Core;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,6 +63,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 builder.Services.AddSwaggerGen();
+
+
 
 var app = builder.Build();
 

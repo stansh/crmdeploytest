@@ -16,4 +16,6 @@ public class MongoDbContext : DbContext
     // You can create properties for each collection you'll use in your application
     public IMongoCollection<Customer> Customers => _database.GetCollection<Customer>("customers");
     public IMongoCollection<Lead> Leads => _database.GetCollection<Lead>("leads");
+    public IMongoCollection<Product> Products => _database.GetCollection<Product>("products");
+    public IMongoCollection<KPIDataItem> KPIData=> _database.GetCollection<KPIDataItem>("kpidata");
 }

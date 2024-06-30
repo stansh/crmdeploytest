@@ -1,0 +1,84 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+
+
+body {
+    background-color: #432D59;
+    font-family: Manrope;
+}
+
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/*colors:
+    #E68530
+
+    #FFA14F
+    #995011
+
+    #30C4E6
+    #027D99
+
+    #47E6AA
+
+*/
+
+/*html {
+  font-size: 14px;
+}*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.nav {
+    background-color: #432D59;
+  
+
+}
+
+.nav a {
+    color: #E68530;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+/*    font-family: 'Tahoma', sans-serif;*/
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+.nav a:hover {
+    color: white;
+    background-color: #383838;
+       
+}
+
+.pageTitle {
+    font-size:1.3rem;
+    color: #027E99;
+    text-transform: uppercase;
+    padding-bottom:.5rem;
+    padding-top:.5rem;
+    padding-left: .5rem;
+    background-color:#e5dbd333
+}
+
+/*.table {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.btn   {
+    font-family: 'Helvetica', sans-serif;
+   
+}*/

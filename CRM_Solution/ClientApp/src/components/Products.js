@@ -244,37 +244,45 @@ export function Products(props) {
 
     return (
         <>
-            <h3 className="pageTitle">Products</h3>
-            {loading && !error && <Spinner children="" />}
-            {error && <h3>{error.message}</h3>}
-            {!error && <Button color="secondary" onClick={toggle}>Add Product</Button>}
-            <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New Product successfully added!</Alert>
-            <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Product updated!</Alert>
-            <Alert color="info" isOpen={alert3} toggle={alertToggle3} fade={true}>Product deleted succerfully.</Alert>
+            <h3 className="pageTitle py-1 px-md-2 fs-5 text-center">Products</h3>
+            <div className="row">
+                <div className="col col-md-1">
+                    {loading && !error && <Spinner className="text-light" children="" />}
+                    {error && <h3>{error.message}</h3>}
+                    {!error && <button  className="w-100 py-4 py-md-1 fs-md-6" onClick={toggle}>Add Product</button>}
+                    <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New Product successfully added!</Alert>
+                    <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Product updated!</Alert>
+                    <Alert color="info" isOpen={alert3} toggle={alertToggle3} fade={true}>Product deleted succerfully.</Alert>
+                </div>
+            </div>  
 
-            <table className='table table-striped' aria-labelledby="tabelLabel">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th></th>
+            <div className="row">
+                <div className="table-responsive">
+                    <table className='tableClass table table-hover table-borderless mt-2 w-100' aria-labelledby="tabelLabel">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th colSpan={2}></th>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    {products.map((lead, index) =>
-                        <tr key={index}>
-                            <td>{lead.name}</td>
-                            <td>{lead.description}</td>
-                            <td>{lead.price}</td>
-                            <td><Button color="secondary" className='btn btn-xs' outline onClick={toggle2} id={index}>Edit</Button></td>
-                            <td><Button color="danger" className='btn btn-xs' outline onClick={toggle3} id={index}>Delete</Button></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {products.map((lead, index) =>
+                                <tr key={index}>
+                                    <td>{lead.name}</td>
+                                    <td>{lead.description}</td>
+                                    <td>{lead.price}</td>
+                                    <td><button className="fs-6" onClick={toggle2}><i class="bi bi-pencil-fill" id={index}></i></button></td>
+                                    <td><button className="fs-6" onClick={toggle3}><i class="bi bi-trash" id={index}></i></button></td>
 
-                        </tr>
-                    )}
-                </tbody>
-            </table>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader closeButton>
                     New Product

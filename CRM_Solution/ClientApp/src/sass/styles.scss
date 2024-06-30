@@ -1,0 +1,174 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+body {
+    // background-color: #332061;
+    // background-image: linear-gradient(to right, #332061, #44336c);
+    background-color: #332061;
+    opacity: 1;
+    background-image: radial-gradient(#4c4165 .5px, #332061 .5px);
+    background-size: 10px 10px;
+    font-family: Manrope;
+
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+ 
+}
+
+// #D7CEEB
+// #C6ADFF
+// #584585
+
+
+/*html {
+  font-size: 14px;
+}*/
+// @media (min-width: 768px) {
+//   html {
+//     font-size: 16px;
+//   }
+// }
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.nav {
+    background-color: #2b1a52;
+    border-radius: 5px;
+
+
+    a {
+        color: #dcd9e3;
+        margin-left: 20px;
+        margin-top: 10px;
+        text-decoration: none;
+        border-bottom: .5px solid #574879;
+        padding-right: 1rem;
+    }
+
+    a:hover {
+      color: white;
+      background-color: #574879;       
+    }
+
+
+
+}
+
+
+.pageTitle {
+    // font-size:1.3rem;
+    color: #2b1a52;
+    background-color:#ABD1B0 ;
+    text-transform: uppercase;
+    // padding-bottom:.5rem;
+    // padding-top:.5rem;
+    // padding-left: .5rem;
+    border-radius: 5px;
+}
+
+.chartCard {
+  background-color: #2b1a52;
+  border-radius: 5px;
+  padding: 2.3rem;
+  max-height: 14rem;
+  span{
+    color: #F2F2F2;
+    text-transform: uppercase;
+  }
+
+}
+
+.chartName{
+  float: center;
+  font-size: .9rem;
+  color: #ABD1B0;
+
+
+}
+
+.kpiCard {
+  color:#2b1a52;
+  background-color: #ABD1B0;
+  background-image: linear-gradient(to bottom, #ABD1B0, #c3d4c6);
+  border-radius: 5px;
+  max-height: 12rem;
+  span {
+    text-transform: uppercase;
+   
+  };
+  h2{
+
+    font-weight: 500;
+    font-family: Oswald;
+
+  };
+
+  i{
+    font-size: 4em;
+  }
+ 
+}
+
+.areaComp{
+  border-radius: 5px;
+  background-color: #ABD1B0;
+  max-height: 12em;
+  text-align: center;
+
+}
+
+
+.row{
+  // max-height: 11rem;
+  margin-bottom: 1rem;
+  
+}
+
+.tableClass {
+    border-radius: 5px;
+    color:#dcd9e3;
+    th {
+      background-color:#D7CEEB;
+      color: #241644;
+
+    }
+
+    tr:hover{
+      background-color: #D7CEEB;
+
+    }
+    tr:nth-child(even) {
+      background-color: #241644;
+    }
+    tr:nth-child(odd) {
+      background-color: #2b1a52;
+    }
+ 
+}
+
+
+ button {
+    font-family: Oswald;
+    color: #2b1a52;
+    background-color:#ABD1B0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: block;
+
+}
+
+.navbar-nav{
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { LoginMenu } from './api-authorization/LoginMenu';
-import './Style.css';
+//import './Style.css';
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -25,21 +25,23 @@ export class NavMenu extends Component {
   render () {
     return (
       <header >
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" light width ="100%">
+        <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom navbar-dark" light>
           <Container fluid >
-                    <NavbarBrand tag={Link} to="/"><img src = "/Images/logo.PNG" width="30%" class="float-start" alt="logo" /></NavbarBrand >
-            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+                    <NavbarBrand tag={Link} to="/"><img src = "/Images/logo1.PNG"  className="img-fluid w-50 float-center float-md-start" alt="logo" /></NavbarBrand >
+            <NavbarToggler onClick={this.toggleNavbar} className="" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-              <ul className="navbar-nav flex-grow">
-                {/*<NavItem>*/}
-                {/*  <NavLink tag={Link} className="text-dark" to="/Dashboard">Home</NavLink>*/}
-                {/* </NavItem>*/}
-                {/*<NavItem>*/}
-                {/*    <NavLink tag={Link} className="text-dark" to="/FetchData">Weather</NavLink>*/}
-                {/*</NavItem>*/}
-
-                {/*<LoginMenu>*/}
-                {/*</LoginMenu>*/}
+              <ul className="navbar-nav flex-grow text-center text-md-end">
+                <NavItem className="">
+                    <NavLink tag={Link} className="text-white" to="/Dashboard">Dashboard</NavLink>
+                </NavItem>
+                <NavItem>
+                   <NavLink tag={Link} className="text-white" to="">Account</NavLink>
+                </NavItem>
+                <NavItem>
+                   <NavLink tag={Link} className="text-white" to="">Log Out</NavLink>
+                </NavItem>
+               {/* <LoginMenu>
+               </LoginMenu> */}
               </ul>
             </Collapse>
           </Container>

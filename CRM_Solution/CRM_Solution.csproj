@@ -16,7 +16,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.SassCompiler" Version="1.77.4" />
     <PackageReference Include="Autofac" Version="7.0.0" />
+    <PackageReference Include="BuildWebCompiler2022" Version="1.14.10" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="6.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.4" />
@@ -91,4 +93,14 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="ClientApp\src\components\SASS.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="ClientApp\src\sass\styles.scss" />
+  </ItemGroup>
+	
+
 </Project>

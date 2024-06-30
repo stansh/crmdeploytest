@@ -2,7 +2,7 @@
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { LoginMenu } from './api-authorization/LoginMenu';
-import './Style.css';
+
 
 export class SideNav extends Component {
     static displayName = SideNav.name;
@@ -24,12 +24,13 @@ export class SideNav extends Component {
 
     render() {
         return (
-            <ul class="nav flex-column col-lg-1 pb-3"  >
-                
-                <Link to="/dashboard">Dashboard</Link>
-                <Link to="/customers">Customers</Link>
-                <Link to="/leads">Leads</Link>
-                <Link to="/products">Products</Link>
+            
+            <ul className="nav col col-lg-1 flex-column sidebar my-2 my-md-1">
+                <Link className="my-md-3 py-2 py-md-2 fs-md-6 text-center text-md-start" to="/dashboard"><i class="bi bi-pie-chart-fill mx-2"></i> Dashboard</Link>
+                <Link className="my-md-3 py-2 py-md-2 fs-md-6 text-center text-md-start" to="/customers"><i class="bi bi-file-person-fill mx-2"></i>Customers</Link>
+                <Link className="my-md-3 py-2 py-md-2 fs-md-6 text-center text-md-start" to="/leads"><i class="bi bi bi-people-fill mx-2"></i>Leads</Link>
+                <Link className="my-md-3 py-2 py-md-2 fs-md-6 text-center text-md-start" to="/products"><i class="bi bi-gear-fill mx-2"></i>Products</Link>
+
                 
             </ul>
         );

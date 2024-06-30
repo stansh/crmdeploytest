@@ -4,250 +4,217 @@ import authService from './api-authorization/AuthorizeService'
 import { useLocation, Redirect, useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { UserManager } from 'oidc-client';
-
-import {
-    Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    PointElement,
-    LineElement,
-    Filler } from 'chart.js';
-
-
-import { Pie, Bar, Line } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
+import { DoughnutComp, PieComp, LineComp, BarComp, AreaComp,PolarAreaComp,ScatterComp} from './Charts';
+import { KpiCom } from './Kpi';
+import { Products } from './Products';
 import { faker } from '@faker-js/faker'
-
-ChartJS.register(ArcElement,
-    Tooltip,
-    Legend,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-    CategoryScale,
-    PointElement,
-    LineElement,
-    Filler);
-
 
 
 
 
 export function Dashboard(props) {
-    const [graphData, setGraphData] = useState([]);
+    const [kpiData, setKpiData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const barLabels = ['January', 'February', 'March', 'April'];
 
-   //pie
-    const pieData = {
-        
-        labels: ['Product 1', 'Product 1', 'Product 3'],
-    
-        datasets: [
-            {
-                label: 'Portion of Total Sales:',
-                data: [12, 19, 3],
+    const chartData = {
+        doughnut1: {
+            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [
+              {
+                label: '# of Votes',
+                data: [4,2,12,66,45],
                 backgroundColor: [
-                    '#E6853099',
-                    '#027D9999',
-                    '#FFA14F99'
-                    
-                  
+                    '#D7CEEB',
+                    '#C6ADFF',
+                    '#F2F2F2',
+                    '#9484B8',
+                    '#584585'
+    
                 ],
-                //borderColor: [
-                //    'rgba(255, 99, 132, 1)',
-                //    'rgba(54, 162, 235, 1)',
-                //    'rgba(255, 206, 86, 1)'
-                   
-                //],
-                borderWidth: 2,
-            },
-        ],
+                borderWidth: 0,
+                updateMode:"active",
+                redraw: true,
+                
+              },
+            ],
+         
+        },
+        doughnut2: {
+            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [
+              {
+                label: '# of Votes',
+                data: [44,30,19],
+                backgroundColor: [
+                    '#D7CEEB',
+                    '#C6ADFF',
+                    '#F2F2F2',
+                    '#9484B8',
+                    '#584585'
+    
+                ],
+                borderWidth: 0,
+                updateMode:"active",
+                redraw: true,
+                
+              },
+            ],
+         
+        },
+        pieData: {
+            // labels: ['Merging with SDB','Merging with SDB','Merging with SDB','Merging with SDB'],
+            maintainAspectRatio:false,
+            datasets: [
+                {
+                    label: 'Product',
+                    data: [22,35,30,14],
+                    backgroundColor: [
+                        '#D7CEEB',
+                        '#C6ADFF',
+                        '#F2F2F2',
+                        '#584585'
+                    ],
         
+                    borderWidth: 0,
+                },
+            ],
             title: {
-                display: true,
+                display: false,
                 text: 'Sales This Year',
             },
+        }
        
-    };
-
-  
-
-    //bar
-    const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
-    const barData = {
-        labels,
-        datasets: [
-            {
-                fill: true,
-               // label: 'Dataset 2',
-                /*data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),*/
-                data: graphData.map(dSet => dSet.x),
-               // borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: '#FFA14FAA',
-            },
-        ],
-    };
-    const barOptions = {
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                position: 'bottom',
-                display: false
-            },
-            title: {
-                display: true,
-                text: 'Sales This Year',
-            },
-        },
-    };
-
-    //line
-
-    const lineOptions = {
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                position: 'bottom'
-            },
-            title: {
-                display: true,
-                text: 'Top Selling 3 Products',
-            },
-        },
-    };
-
-    //const labels2 = ['January', 'February', 'March', 'April', 'May', 'June'];
-
-    const lineData = {
-        labels,
-        datasets: [
-            {
-                label: 'Product 1',
-                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
-                borderColor: '#995011FF',
-                backgroundColor: '#99501122',
-            },
-            {
-                label: 'Product 2',
-                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
-                borderColor: '#027D99ff',
-                backgroundColor: '#027D9922',
-            },
-            {
-                label: 'Product 3',
-                data: labels.map(() => faker.datatype.number({ min: 200, max: 1000 })),
-                borderColor: '#47E6AAff',
-                backgroundColor: '#47E6AA22',
-            },
-
-
-        ],
-    };
-
-
-    //line 2
-
-    const lineOptions2 = {
-   
-        
-        plugins: {
-            legend: {
-                position: 'bottom'
-            },
-            title: {
-                display: true,
-                text: 'Annual Sales History ',
-            },
-        },
-    };
-
-   
-
-    const lineData2 = {
-        labels,
-        datasets: [
-           
-            {
-                fill: true,
-                label: '2021',
-                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000})),
-                borderColor: '#47E6AA33',
-                backgroundColor: '#47E6AA11',
-
-            },
-            {
-                fill: true,
-                label: '2022',
-                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000 })),
-                borderColor: '#99501122',
-                backgroundColor: '#99501122',
-
-            },
-            {
-                fill: true,
-                label: '2023',
-                data: labels.map(() => faker.datatype.number({ min: 50000, max: 55000 })),
-                borderColor: '#027D99ff',
-                backgroundColor: '#027D9944',
-
-            },
-        ],
-    };
-
-
+    }
 
 
     useEffect(() => {
+        setLoading(true);
         const token = authService.getAccessToken();
-
-
-        fetch('/api/graph', {
+        fetch('/api/kpidata', {
             headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
         })
-            .then(response => {
-                if (response.ok) {
-                    return response;
-                } else {
-                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
-                    error.response = response;
-                    //setError(error)
-                    throw error;
-                }
-            })
-            .then(res => res.json())
-            .then(res => {
-                setGraphData(res)
-            })
-            .catch(error => { console.log('Error: ', error.message) })
-
+        .then(response => {
+            if (response.ok) {
+                setLoading(false);
+                return response;
+            } else {
+                const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                error.response = response;
+                //setError(error)
+                throw error;
+            }
+        })
+        .then(res => res.json())
+        .then(res => {
+            setKpiData(res)
+        })
+        .catch(error => { console.log('Error: ', error.message) })
 
     }, [])
 
     
     return (
         <>
-
-            <h3 className="pageTitle"> Dashboard</h3>
-            <div className="row ml-5 ml-2">
-                <div className="col-lg-2 mx-5">
-                    <Pie data={pieData}  />
+            {/* <h3 className="pageTitle"> Dashboard</h3> */}
+                <div className="row gx-md-2 gx-1 ">
+                    {kpiData.map(ds=>
+                         <div className="col col-md-2 my-1">
+                            <div className="d-flex justify-content-center h-100">
+                                {loading &&  <Spinner className="text-dark" children="" />}
+                                <KpiCom kpiName={ds.kpiName} kpiValue={ds.kpiValue}/>    
+                            </div>
+                        </div>
+                    )}
+                    <div className="col col-md-4 my-1">
+                        <div className="d-flex justify-content-center">
+                            <div className="areaComp w-100" >
+                                <span className="chartName text-dark">Deals & Revenue</span>
+                                <AreaComp />
+                            </div>
+                          
+                        </div>  
+                    </div>
                 </div>
-                <div className="col-lg-2 mx-5">
-                    <Bar options={barOptions} data={barData}  />
+                <div className="row gx-md-3 gx-1">
+                    <div className="col col-md-2 my-1 ">
+                        <span className="chartName">Top Revenue Channels</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <DoughnutComp data={chartData.doughnut1}/>    
+                        </div>
+                    </div>
+                    <div className="col col-md-2 my-1" >
+                        <span className="chartName">Top Products</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <DoughnutComp data={chartData.doughnut2}/>
+                        </div>
+                    </div>
+                    <div className="col col-md-3 my-1 ">
+                     <span className="chartName">Monthly Income</span>
+                        <div class="chartCard d-flex justify-content-center">
+                            <BarComp/>
+                        </div> 
+                    </div>
+                    <div className="col col-md-3 my-1 ">
+                        <span className="chartName">Engagement</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <LineComp/>
+                        </div> 
+                    </div>
+                    <div className="col col-md-2 my-1">
+                        <span className="chartName">Ongoing Projects</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <PieComp data={chartData.pieData} />                          
+                        </div> 
+                    </div>
                 </div>
-                <div className="col-lg-2 mx-5" >
-                    <Line options={lineOptions} data={lineData} />
+                <div className='row'>
+                    <div className="col col-md-7 my-1">
+                        <span className="chartName">Quarter Sales</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <LineComp />
+                        </div> 
+                    </div>
+                    <div className="col col-md-2 my-1">
+                         <span className="chartName">Project Compeletion</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <PolarAreaComp/>
+                        </div> 
+                    </div>
+                    <div className="col col-md-3 my-1">
+                        <span className="chartName">Sales By State</span>
+                        <div class="chartCard d-flex justify-content-center ">
+                            <ScatterComp />
+                        </div> 
+                    </div>
+                    {/* <div className="col col-md-1 my-1">
+                        <div class="chartCard d-flex justify-content-center ">
+                            <LineComp />
+                        </div> 
+                    </div> */}
+                    <div className="col col-md-12 mt-md-4 ">
+                        <div class="">
+                            <Products />
+                        </div> 
+                    </div>
+                   
                 </div>
-            </div>
-            <div className="row mt-5" >
-                <div className="col-lg-8" >
-                    <Line options={lineOptions2} data={lineData2} />
-                </div>
-
-
-            </div>
+               
+             
+                 {/* <div class="container">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="bg-light">Custom column padding</div>
+                        </div>
+                        <div class="col">
+                            <div class="bg-light">Custom column padding</div>
+                        </div>
+                    </div>
+                </div> */}
+               
+               
+            
             
         </>
     )

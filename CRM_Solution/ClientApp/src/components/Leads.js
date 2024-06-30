@@ -184,8 +184,8 @@ export function Leads(props) {
 
         const updatedLead = {
             id: id,
-            firstName: document.querySelector("#editLeadForm").leadFirstName.value,
-            lastName: document.querySelector("#editLeadForm").leadLastName.value,
+            first_name: document.querySelector("#editLeadForm").leadFirstName.value,
+            last_name: document.querySelector("#editLeadForm").leadLastName.value,
             phone: document.querySelector("#editLeadForm").leadPhone.value,
             email: document.querySelector("#editLeadForm").leadEmail.value,
             street: document.querySelector("#editLeadForm").leadStreet.value,
@@ -261,37 +261,45 @@ export function Leads(props) {
 
     return (
         <>
-            <h3 className="pageTitle">Leads</h3>
-            {loading && !error && <Spinner children="" />}
-            {error && <h3>{error.message}</h3>}
-            {!error && <Button color="secondary" onClick={toggle}>Add Lead</Button>}
-            <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New Lead successfully added!</Alert>
-            <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Lead updated!</Alert>
-            <Alert color="info" isOpen={alert3} toggle={alertToggle3} fade={true}>Lead deleted succerfully.</Alert>
+            <h3 className="pageTitle py-1 px-md-2 fs-5 text-center">Leads</h3>
+            <div className="row">
+                <div className="col col-md-1">
+                    {loading && !error &&  <Spinner className="text-light" children="" />}
+                    {error && <h3>{error.message}</h3>}
+                    {!error && <button className="w-100 py-4 py-md-1 fs-md-6" onClick={toggle}>Add Lead</button>}
+                    <Alert color="info" isOpen={alert} toggle={alertToggle} fade={true}>New Lead successfully added!</Alert>
+                    <Alert color="info" isOpen={alert2} toggle={alertToggle2} fade={true}>Lead updated!</Alert>
+                    <Alert color="info" isOpen={alert3} toggle={alertToggle3} fade={true}>Lead deleted succerfully.</Alert>
 
-            <table className='table table-striped' aria-labelledby="tabelLabel">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th></th>
+                </div>
+            </div>  
+            <div className="row">
+                <div className="table-responsive">
+                    <table className="tableClass table table-hover table-borderless mt-2 w-100" aria-labelledby="tabelLabel">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th colSpan={2}></th>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    {Leads.map((lead, index) =>
-                        <tr key={index}>
-                            <td>{lead.firstName} {lead.lastName}</td>
-                            <td>{lead.email}</td>
-                            <td>{lead.phone}</td>
-                            <td><Button color="secondary" className='btn btn-xs' outline onClick={toggle2} id={index}>Edit</Button></td>
-                            <td><Button color="danger" className='btn btn-xs' outline onClick={toggle3} id={index}>Delete</Button></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {Leads.map((lead, index) =>
+                                <tr key={index}>
+                                    <td>{lead.first_name} {lead.last_name}</td>
+                                    <td>{lead.email}</td>
+                                    <td>{lead.phone}</td>
+                                    <td><button className='fs-6' onClick={toggle2} id={index}><i class="bi bi-pencil-fill" id={index}></i></button></td>
+                                    <td><button className='fs-6' onClick={toggle3} id={index}><i class="bi bi-trash" id={index}></i></button></td>
 
-                        </tr>
-                    )}
-                </tbody>
-            </table>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader closeButton>
                     New Lead

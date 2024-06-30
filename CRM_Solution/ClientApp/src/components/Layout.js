@@ -5,22 +5,25 @@ import { SideNav } from './SideNav';
 
 export class Layout extends Component {
   static displayName = Layout.name;
-
   render () {
     return (
-        <div class= "" >
+        <>
             
             <Container fluid>
-                <NavMenu class = "nav"/>
-               
-                <div class="row mt-5 mx-2"  >
-                    <SideNav />
-                    <div class="col-lg-10"> {this.props.children}</div>
+                <NavMenu className = "nav"/>
+                <div className ="row gx-2">
+                  {/* <SideNav classname="nav flex-column col-md-2 pb-3" />    */}
+                  <SideNav className="col col-lg-1"/>
+                
+                  
+                
+                  {/* <SideNav classname="nav flex-column col-md-2 pb-3" />    */}
+                    <main className="col-lg-11 ">{this.props.children}</main>
                 </div>
 
         
             </Container>
-      </div>
+      </>
     );
   }
 }
